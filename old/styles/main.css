@@ -1,0 +1,6090 @@
+/*
+ * Web Starter Kit
+ *
+ * Multi-screen layout styles for your page. Brought to you by the
+ * Web Starter Kit team.
+ *
+ */
+/*
+ * Visual Style Guide styles
+ * Remove if you prefer to use a CSS library, like Bootstrap
+ */
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Color Palettes  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* Heading back */
+/* ==========  Sliders ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* line 17, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z1 {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 21, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 25, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z3 {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 29, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z4 {
+  box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.25), 0 10px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 33, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z5 {
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+/* line 201, ../styleguide/typography/_typography.scss */
+html, body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* line 208, ../styleguide/typography/_typography.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Styles for HTML elements
+ */
+/* line 217, ../styleguide/typography/_typography.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  opacity: 0.54;
+  font-size: 0.6em;
+}
+
+/* line 222, ../styleguide/typography/_typography.scss */
+h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* line 226, ../styleguide/typography/_typography.scss */
+h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+/* line 230, ../styleguide/typography/_typography.scss */
+h3 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 234, ../styleguide/typography/_typography.scss */
+h4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 238, ../styleguide/typography/_typography.scss */
+h5 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+/* line 242, ../styleguide/typography/_typography.scss */
+h6 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 246, ../styleguide/typography/_typography.scss */
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin: 0 0 16px 0;
+}
+
+/* line 252, ../styleguide/typography/_typography.scss */
+a {
+  font-weight: bold;
+}
+
+/* line 256, ../styleguide/typography/_typography.scss */
+blockquote {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+/* line 161, ../styleguide/typography/_typography.scss */
+blockquote:before {
+  content: '“';
+  opacity: 0.54;
+}
+/* line 166, ../styleguide/typography/_typography.scss */
+blockquote:after {
+  content: '”';
+  opacity: 0.54;
+}
+
+/* line 260, ../styleguide/typography/_typography.scss */
+mark {
+  background-color: #f4ff81;
+}
+
+/* line 264, ../styleguide/typography/_typography.scss */
+dt {
+  font-weight: 700;
+}
+
+/**
+ * Class Name Styles
+ */
+/* line 272, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+/* line 276, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-4--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  opacity: 0.54;
+}
+
+/* line 280, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-3 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* line 284, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-3--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  opacity: 0.54;
+}
+
+/* line 288, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+/* line 292, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-2--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  opacity: 0.54;
+}
+
+/* line 296, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 300, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-1--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  opacity: 0.54;
+}
+
+/* line 304, ../styleguide/typography/_typography.scss */
+.wsk-typography--headline {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 308, ../styleguide/typography/_typography.scss */
+.wsk-typography--headline--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0.87;
+}
+
+/* line 312, ../styleguide/typography/_typography.scss */
+.wsk-typography--title {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+/* line 316, ../styleguide/typography/_typography.scss */
+.wsk-typography--title--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  opacity: 0.87;
+}
+
+/* line 320, ../styleguide/typography/_typography.scss */
+.wsk-typography--subhead {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 324, ../styleguide/typography/_typography.scss */
+.wsk-typography--subhead--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 328, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-2 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 332, ../styleguide/typography/_typography.scss */
+.wsk-typography--Body-2--colorContrast {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 336, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 340, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--colorContrast {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 344, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-2--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 348, ../styleguide/typography/_typography.scss */
+.wsk-typography--Body-2--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 352, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 356, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 360, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* line 364, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* line 368, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--colorContrast {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  opacity: 0.54;
+}
+
+/* line 372, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  opacity: 0.54;
+}
+
+/* line 376, ../styleguide/typography/_typography.scss */
+.wsk-typography--menu {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+/* line 380, ../styleguide/typography/_typography.scss */
+.wsk-typography--menu--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 384, ../styleguide/typography/_typography.scss */
+.wsk-typography--button {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+/* line 388, ../styleguide/typography/_typography.scss */
+.wsk-typography--button--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 392, ../styleguide/typography/_typography.scss */
+.wsk-typography--textLeft {
+  text-align: left;
+}
+
+/* line 396, ../styleguide/typography/_typography.scss */
+.wsk-typography--textRight {
+  text-align: right;
+}
+
+/* line 400, ../styleguide/typography/_typography.scss */
+.wsk-typography--textCenter {
+  text-align: center;
+}
+
+/* line 404, ../styleguide/typography/_typography.scss */
+.wsk-typography--textJustify {
+  text-align: justify;
+}
+
+/* line 408, ../styleguide/typography/_typography.scss */
+.wsk-typography--textNowrap {
+  white-space: nowrap;
+}
+
+/* line 413, ../styleguide/typography/_typography.scss */
+.wsk-typography--textLowercase {
+  text-transform: lowercase;
+}
+
+/* line 417, ../styleguide/typography/_typography.scss */
+.wsk-typography--textUppercase {
+  text-transform: uppercase;
+}
+
+/* line 421, ../styleguide/typography/_typography.scss */
+.wsk-typography--textCapitalize {
+  text-transform: capitalize;
+}
+
+/* line 426, ../styleguide/typography/_typography.scss */
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > td,
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+/* line 431, ../styleguide/typography/_typography.scss */
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > td,
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+@font-face {
+  font-family: 'Material-Design-Iconic-Font';
+  src: url("../../fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
+  src: url("../../fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("../../fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("../../fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 15, ../styleguide/icons/_icons.scss */
+.wsk-icon {
+  font-family: 'Material-Design-Iconic-Font';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 836, ../styleguide/icons/_icons.scss */
+.wsk-icon--3d-rotation:before {
+  content: "\f000";
+}
+
+/* line 839, ../styleguide/icons/_icons.scss */
+.wsk-icon--accessibility:before {
+  content: "\f001";
+}
+
+/* line 842, ../styleguide/icons/_icons.scss */
+.wsk-icon--account-balance:before {
+  content: "\f002";
+}
+
+/* line 845, ../styleguide/icons/_icons.scss */
+.wsk-icon--account-balance-wallet:before {
+  content: "\f003";
+}
+
+/* line 848, ../styleguide/icons/_icons.scss */
+.wsk-icon--account-box:before {
+  content: "\f004";
+}
+
+/* line 851, ../styleguide/icons/_icons.scss */
+.wsk-icon--account-child:before {
+  content: "\f005";
+}
+
+/* line 854, ../styleguide/icons/_icons.scss */
+.wsk-icon--account-circle:before {
+  content: "\f006";
+}
+
+/* line 857, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-shopping-cart:before {
+  content: "\f007";
+}
+
+/* line 860, ../styleguide/icons/_icons.scss */
+.wsk-icon--alarm:before {
+  content: "\f008";
+}
+
+/* line 863, ../styleguide/icons/_icons.scss */
+.wsk-icon--alarm-add:before {
+  content: "\f009";
+}
+
+/* line 866, ../styleguide/icons/_icons.scss */
+.wsk-icon--alarm-off:before {
+  content: "\f00a";
+}
+
+/* line 869, ../styleguide/icons/_icons.scss */
+.wsk-icon--alarm-on:before {
+  content: "\f00b";
+}
+
+/* line 872, ../styleguide/icons/_icons.scss */
+.wsk-icon--android:before {
+  content: "\f00c";
+}
+
+/* line 875, ../styleguide/icons/_icons.scss */
+.wsk-icon--announcement:before {
+  content: "\f00d";
+}
+
+/* line 878, ../styleguide/icons/_icons.scss */
+.wsk-icon--aspect-ratio:before {
+  content: "\f00e";
+}
+
+/* line 881, ../styleguide/icons/_icons.scss */
+.wsk-icon--assessment:before {
+  content: "\f00f";
+}
+
+/* line 884, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment:before {
+  content: "\f010";
+}
+
+/* line 887, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment-ind:before {
+  content: "\f011";
+}
+
+/* line 890, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment-late:before {
+  content: "\f012";
+}
+
+/* line 893, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment-return:before {
+  content: "\f013";
+}
+
+/* line 896, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment-returned:before {
+  content: "\f014";
+}
+
+/* line 899, ../styleguide/icons/_icons.scss */
+.wsk-icon--assignment-turned-in:before {
+  content: "\f015";
+}
+
+/* line 902, ../styleguide/icons/_icons.scss */
+.wsk-icon--autorenew:before {
+  content: "\f016";
+}
+
+/* line 905, ../styleguide/icons/_icons.scss */
+.wsk-icon--backup:before {
+  content: "\f017";
+}
+
+/* line 908, ../styleguide/icons/_icons.scss */
+.wsk-icon--book:before {
+  content: "\f018";
+}
+
+/* line 911, ../styleguide/icons/_icons.scss */
+.wsk-icon--bookmark:before {
+  content: "\f019";
+}
+
+/* line 914, ../styleguide/icons/_icons.scss */
+.wsk-icon--bookmark-outline:before {
+  content: "\f01a";
+}
+
+/* line 917, ../styleguide/icons/_icons.scss */
+.wsk-icon--bug-report:before {
+  content: "\f01b";
+}
+
+/* line 920, ../styleguide/icons/_icons.scss */
+.wsk-icon--cached:before {
+  content: "\f01c";
+}
+
+/* line 923, ../styleguide/icons/_icons.scss */
+.wsk-icon--class:before {
+  content: "\f01d";
+}
+
+/* line 926, ../styleguide/icons/_icons.scss */
+.wsk-icon--credit-card:before {
+  content: "\f01e";
+}
+
+/* line 929, ../styleguide/icons/_icons.scss */
+.wsk-icon--dashboard:before {
+  content: "\f01f";
+}
+
+/* line 932, ../styleguide/icons/_icons.scss */
+.wsk-icon--delete:before {
+  content: "\f020";
+}
+
+/* line 935, ../styleguide/icons/_icons.scss */
+.wsk-icon--description:before {
+  content: "\f021";
+}
+
+/* line 938, ../styleguide/icons/_icons.scss */
+.wsk-icon--dns:before {
+  content: "\f022";
+}
+
+/* line 941, ../styleguide/icons/_icons.scss */
+.wsk-icon--done:before {
+  content: "\f023";
+}
+
+/* line 944, ../styleguide/icons/_icons.scss */
+.wsk-icon--done-all:before {
+  content: "\f024";
+}
+
+/* line 947, ../styleguide/icons/_icons.scss */
+.wsk-icon--event:before {
+  content: "\f025";
+}
+
+/* line 950, ../styleguide/icons/_icons.scss */
+.wsk-icon--exit-to-app:before {
+  content: "\f026";
+}
+
+/* line 953, ../styleguide/icons/_icons.scss */
+.wsk-icon--explore:before {
+  content: "\f027";
+}
+
+/* line 956, ../styleguide/icons/_icons.scss */
+.wsk-icon--extension:before {
+  content: "\f028";
+}
+
+/* line 959, ../styleguide/icons/_icons.scss */
+.wsk-icon--face-unlock:before {
+  content: "\f029";
+}
+
+/* line 962, ../styleguide/icons/_icons.scss */
+.wsk-icon--favorite:before {
+  content: "\f02a";
+}
+
+/* line 965, ../styleguide/icons/_icons.scss */
+.wsk-icon--favorite-outline:before {
+  content: "\f02b";
+}
+
+/* line 968, ../styleguide/icons/_icons.scss */
+.wsk-icon--find-in-page:before {
+  content: "\f02c";
+}
+
+/* line 971, ../styleguide/icons/_icons.scss */
+.wsk-icon--find-replace:before {
+  content: "\f02d";
+}
+
+/* line 974, ../styleguide/icons/_icons.scss */
+.wsk-icon--flip-to-back:before {
+  content: "\f02e";
+}
+
+/* line 977, ../styleguide/icons/_icons.scss */
+.wsk-icon--flip-to-front:before {
+  content: "\f02f";
+}
+
+/* line 980, ../styleguide/icons/_icons.scss */
+.wsk-icon--get-app:before {
+  content: "\f030";
+}
+
+/* line 983, ../styleguide/icons/_icons.scss */
+.wsk-icon--grade:before {
+  content: "\f031";
+}
+
+/* line 986, ../styleguide/icons/_icons.scss */
+.wsk-icon--group-work:before {
+  content: "\f032";
+}
+
+/* line 989, ../styleguide/icons/_icons.scss */
+.wsk-icon--help:before {
+  content: "\f033";
+}
+
+/* line 992, ../styleguide/icons/_icons.scss */
+.wsk-icon--highlight-remove:before {
+  content: "\f034";
+}
+
+/* line 995, ../styleguide/icons/_icons.scss */
+.wsk-icon--history:before {
+  content: "\f035";
+}
+
+/* line 998, ../styleguide/icons/_icons.scss */
+.wsk-icon--home:before {
+  content: "\f036";
+}
+
+/* line 1001, ../styleguide/icons/_icons.scss */
+.wsk-icon--https:before {
+  content: "\f037";
+}
+
+/* line 1004, ../styleguide/icons/_icons.scss */
+.wsk-icon--info:before {
+  content: "\f038";
+}
+
+/* line 1007, ../styleguide/icons/_icons.scss */
+.wsk-icon--info-outline:before {
+  content: "\f039";
+}
+
+/* line 1010, ../styleguide/icons/_icons.scss */
+.wsk-icon--input:before {
+  content: "\f03a";
+}
+
+/* line 1013, ../styleguide/icons/_icons.scss */
+.wsk-icon--invert-colors:before {
+  content: "\f03b";
+}
+
+/* line 1016, ../styleguide/icons/_icons.scss */
+.wsk-icon--label:before {
+  content: "\f03c";
+}
+
+/* line 1019, ../styleguide/icons/_icons.scss */
+.wsk-icon--label-outline:before {
+  content: "\f03d";
+}
+
+/* line 1022, ../styleguide/icons/_icons.scss */
+.wsk-icon--language:before {
+  content: "\f03e";
+}
+
+/* line 1025, ../styleguide/icons/_icons.scss */
+.wsk-icon--launch:before {
+  content: "\f03f";
+}
+
+/* line 1028, ../styleguide/icons/_icons.scss */
+.wsk-icon--list:before {
+  content: "\f040";
+}
+
+/* line 1031, ../styleguide/icons/_icons.scss */
+.wsk-icon--lock:before {
+  content: "\f041";
+}
+
+/* line 1034, ../styleguide/icons/_icons.scss */
+.wsk-icon--lock-open:before {
+  content: "\f042";
+}
+
+/* line 1037, ../styleguide/icons/_icons.scss */
+.wsk-icon--lock-outline:before {
+  content: "\f043";
+}
+
+/* line 1040, ../styleguide/icons/_icons.scss */
+.wsk-icon--loyalty:before {
+  content: "\f044";
+}
+
+/* line 1043, ../styleguide/icons/_icons.scss */
+.wsk-icon--markunread-mailbox:before {
+  content: "\f045";
+}
+
+/* line 1046, ../styleguide/icons/_icons.scss */
+.wsk-icon--note-add:before {
+  content: "\f046";
+}
+
+/* line 1049, ../styleguide/icons/_icons.scss */
+.wsk-icon--open-in-browser:before {
+  content: "\f047";
+}
+
+/* line 1052, ../styleguide/icons/_icons.scss */
+.wsk-icon--open-in-new:before {
+  content: "\f048";
+}
+
+/* line 1055, ../styleguide/icons/_icons.scss */
+.wsk-icon--open-with:before {
+  content: "\f049";
+}
+
+/* line 1058, ../styleguide/icons/_icons.scss */
+.wsk-icon--pageview:before {
+  content: "\f04a";
+}
+
+/* line 1061, ../styleguide/icons/_icons.scss */
+.wsk-icon--payment:before {
+  content: "\f04b";
+}
+
+/* line 1064, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-camera-mic:before {
+  content: "\f04c";
+}
+
+/* line 1067, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-contact-cal:before {
+  content: "\f04d";
+}
+
+/* line 1070, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-data-setting:before {
+  content: "\f04e";
+}
+
+/* line 1073, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-device-info:before {
+  content: "\f04f";
+}
+
+/* line 1076, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-identity:before {
+  content: "\f050";
+}
+
+/* line 1079, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-media:before {
+  content: "\f051";
+}
+
+/* line 1082, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-phone-msg:before {
+  content: "\f052";
+}
+
+/* line 1085, ../styleguide/icons/_icons.scss */
+.wsk-icon--perm-scan-wifi:before {
+  content: "\f053";
+}
+
+/* line 1088, ../styleguide/icons/_icons.scss */
+.wsk-icon--picture-in-picture:before {
+  content: "\f054";
+}
+
+/* line 1091, ../styleguide/icons/_icons.scss */
+.wsk-icon--polymer:before {
+  content: "\f055";
+}
+
+/* line 1094, ../styleguide/icons/_icons.scss */
+.wsk-icon--print:before {
+  content: "\f056";
+}
+
+/* line 1097, ../styleguide/icons/_icons.scss */
+.wsk-icon--query-builder:before {
+  content: "\f057";
+}
+
+/* line 1100, ../styleguide/icons/_icons.scss */
+.wsk-icon--question-answer:before {
+  content: "\f058";
+}
+
+/* line 1103, ../styleguide/icons/_icons.scss */
+.wsk-icon--receipt:before {
+  content: "\f059";
+}
+
+/* line 1106, ../styleguide/icons/_icons.scss */
+.wsk-icon--redeem:before {
+  content: "\f05a";
+}
+
+/* line 1109, ../styleguide/icons/_icons.scss */
+.wsk-icon--reorder:before {
+  content: "\f094";
+}
+
+/* line 1112, ../styleguide/icons/_icons.scss */
+.wsk-icon--report-problem:before {
+  content: "\f05b";
+}
+
+/* line 1115, ../styleguide/icons/_icons.scss */
+.wsk-icon--restore:before {
+  content: "\f05c";
+}
+
+/* line 1118, ../styleguide/icons/_icons.scss */
+.wsk-icon--room:before {
+  content: "\f05d";
+}
+
+/* line 1121, ../styleguide/icons/_icons.scss */
+.wsk-icon--schedule:before {
+  content: "\f05e";
+}
+
+/* line 1124, ../styleguide/icons/_icons.scss */
+.wsk-icon--search:before {
+  content: "\f05f";
+}
+
+/* line 1127, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings:before {
+  content: "\f060";
+}
+
+/* line 1130, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-applications:before {
+  content: "\f061";
+}
+
+/* line 1133, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-backup-restore:before {
+  content: "\f062";
+}
+
+/* line 1136, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-bluetooth:before {
+  content: "\f063";
+}
+
+/* line 1139, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-cell:before {
+  content: "\f064";
+}
+
+/* line 1142, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-display:before {
+  content: "\f065";
+}
+
+/* line 1145, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-ethernet:before {
+  content: "\f066";
+}
+
+/* line 1148, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-input-antenna:before {
+  content: "\f067";
+}
+
+/* line 1151, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-input-component:before {
+  content: "\f068";
+}
+
+/* line 1154, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-input-composite:before {
+  content: "\f069";
+}
+
+/* line 1157, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-input-hdmi:before {
+  content: "\f06a";
+}
+
+/* line 1160, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-input-svideo:before {
+  content: "\f06b";
+}
+
+/* line 1163, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-overscan:before {
+  content: "\f06c";
+}
+
+/* line 1166, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-phone:before {
+  content: "\f06d";
+}
+
+/* line 1169, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-power:before {
+  content: "\f06e";
+}
+
+/* line 1172, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-remote:before {
+  content: "\f06f";
+}
+
+/* line 1175, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-voice:before {
+  content: "\f070";
+}
+
+/* line 1178, ../styleguide/icons/_icons.scss */
+.wsk-icon--shop:before {
+  content: "\f071";
+}
+
+/* line 1181, ../styleguide/icons/_icons.scss */
+.wsk-icon--shopping-basket:before {
+  content: "\f072";
+}
+
+/* line 1184, ../styleguide/icons/_icons.scss */
+.wsk-icon--shopping-cart:before {
+  content: "\f073";
+}
+
+/* line 1187, ../styleguide/icons/_icons.scss */
+.wsk-icon--shop-two:before {
+  content: "\f074";
+}
+
+/* line 1190, ../styleguide/icons/_icons.scss */
+.wsk-icon--speaker-notes:before {
+  content: "\f075";
+}
+
+/* line 1193, ../styleguide/icons/_icons.scss */
+.wsk-icon--spellcheck:before {
+  content: "\f076";
+}
+
+/* line 1196, ../styleguide/icons/_icons.scss */
+.wsk-icon--star-rate:before {
+  content: "\f077";
+}
+
+/* line 1199, ../styleguide/icons/_icons.scss */
+.wsk-icon--stars:before {
+  content: "\f078";
+}
+
+/* line 1202, ../styleguide/icons/_icons.scss */
+.wsk-icon--store:before {
+  content: "\f079";
+}
+
+/* line 1205, ../styleguide/icons/_icons.scss */
+.wsk-icon--subject:before {
+  content: "\f07a";
+}
+
+/* line 1208, ../styleguide/icons/_icons.scss */
+.wsk-icon--supervisor-account:before {
+  content: "";
+}
+
+/* line 1211, ../styleguide/icons/_icons.scss */
+.wsk-icon--swap-horiz:before {
+  content: "\f07b";
+}
+
+/* line 1214, ../styleguide/icons/_icons.scss */
+.wsk-icon--swap-vert:before {
+  content: "\f07c";
+}
+
+/* line 1217, ../styleguide/icons/_icons.scss */
+.wsk-icon--swap-vert-circle:before {
+  content: "\f07d";
+}
+
+/* line 1220, ../styleguide/icons/_icons.scss */
+.wsk-icon--system-update-tv:before {
+  content: "\f07e";
+}
+
+/* line 1223, ../styleguide/icons/_icons.scss */
+.wsk-icon--tab:before {
+  content: "\f07f";
+}
+
+/* line 1226, ../styleguide/icons/_icons.scss */
+.wsk-icon--tab-unselected:before {
+  content: "\f080";
+}
+
+/* line 1229, ../styleguide/icons/_icons.scss */
+.wsk-icon--theaters:before {
+  content: "\f081";
+}
+
+/* line 1232, ../styleguide/icons/_icons.scss */
+.wsk-icon--thumb-down:before {
+  content: "\f082";
+}
+
+/* line 1235, ../styleguide/icons/_icons.scss */
+.wsk-icon--thumbs-up-down:before {
+  content: "\f083";
+}
+
+/* line 1238, ../styleguide/icons/_icons.scss */
+.wsk-icon--thumb-up:before {
+  content: "\f084";
+}
+
+/* line 1241, ../styleguide/icons/_icons.scss */
+.wsk-icon--toc:before {
+  content: "\f085";
+}
+
+/* line 1244, ../styleguide/icons/_icons.scss */
+.wsk-icon--today:before {
+  content: "\f086";
+}
+
+/* line 1247, ../styleguide/icons/_icons.scss */
+.wsk-icon--track-changes:before {
+  content: "\f087";
+}
+
+/* line 1250, ../styleguide/icons/_icons.scss */
+.wsk-icon--translate:before {
+  content: "\f088";
+}
+
+/* line 1253, ../styleguide/icons/_icons.scss */
+.wsk-icon--trending-down:before {
+  content: "\f089";
+}
+
+/* line 1256, ../styleguide/icons/_icons.scss */
+.wsk-icon--trending-neutral:before {
+  content: "\f08a";
+}
+
+/* line 1259, ../styleguide/icons/_icons.scss */
+.wsk-icon--trending-up:before {
+  content: "\f08b";
+}
+
+/* line 1262, ../styleguide/icons/_icons.scss */
+.wsk-icon--turned-in:before {
+  content: "\f08c";
+}
+
+/* line 1265, ../styleguide/icons/_icons.scss */
+.wsk-icon--turned-in-not:before {
+  content: "\f08d";
+}
+
+/* line 1268, ../styleguide/icons/_icons.scss */
+.wsk-icon--verified-user:before {
+  content: "\f08e";
+}
+
+/* line 1271, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-agenda:before {
+  content: "\f08f";
+}
+
+/* line 1274, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-array:before {
+  content: "\f090";
+}
+
+/* line 1277, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-carousel:before {
+  content: "\f091";
+}
+
+/* line 1280, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-column:before {
+  content: "\f092";
+}
+
+/* line 1283, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-day:before {
+  content: "\f093";
+}
+
+/* line 1286, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-headline:before {
+  content: "\f094";
+}
+
+/* line 1289, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-list:before {
+  content: "\f095";
+}
+
+/* line 1292, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-module:before {
+  content: "\f096";
+}
+
+/* line 1295, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-quilt:before {
+  content: "\f097";
+}
+
+/* line 1298, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-stream:before {
+  content: "\f098";
+}
+
+/* line 1301, ../styleguide/icons/_icons.scss */
+.wsk-icon--view-week:before {
+  content: "\f099";
+}
+
+/* line 1304, ../styleguide/icons/_icons.scss */
+.wsk-icon--visibility:before {
+  content: "\f09a";
+}
+
+/* line 1307, ../styleguide/icons/_icons.scss */
+.wsk-icon--visibility-off:before {
+  content: "\f09b";
+}
+
+/* line 1310, ../styleguide/icons/_icons.scss */
+.wsk-icon--wallet-giftcard:before {
+  content: "\f09c";
+}
+
+/* line 1313, ../styleguide/icons/_icons.scss */
+.wsk-icon--wallet-membership:before {
+  content: "\f09d";
+}
+
+/* line 1316, ../styleguide/icons/_icons.scss */
+.wsk-icon--wallet-travel:before {
+  content: "\f09e";
+}
+
+/* line 1319, ../styleguide/icons/_icons.scss */
+.wsk-icon--work:before {
+  content: "\f09f";
+}
+
+/* line 1324, ../styleguide/icons/_icons.scss */
+.wsk-icon--error:before {
+  content: "\f0a0";
+}
+
+/* line 1327, ../styleguide/icons/_icons.scss */
+.wsk-icon--warning:before {
+  content: "\f0a1";
+}
+
+/* line 1332, ../styleguide/icons/_icons.scss */
+.wsk-icon--album:before {
+  content: "\f0a2";
+}
+
+/* line 1335, ../styleguide/icons/_icons.scss */
+.wsk-icon--av-timer:before {
+  content: "\f0a3";
+}
+
+/* line 1338, ../styleguide/icons/_icons.scss */
+.wsk-icon--closed-caption:before {
+  content: "\f0a4";
+}
+
+/* line 1341, ../styleguide/icons/_icons.scss */
+.wsk-icon--equalizer:before {
+  content: "\f0a5";
+}
+
+/* line 1344, ../styleguide/icons/_icons.scss */
+.wsk-icon--explicit:before {
+  content: "\f0a6";
+}
+
+/* line 1347, ../styleguide/icons/_icons.scss */
+.wsk-icon--fast-forward:before {
+  content: "\f0a7";
+}
+
+/* line 1350, ../styleguide/icons/_icons.scss */
+.wsk-icon--fast-rewind:before {
+  content: "\f0a8";
+}
+
+/* line 1353, ../styleguide/icons/_icons.scss */
+.wsk-icon--games:before {
+  content: "\f0a9";
+}
+
+/* line 1356, ../styleguide/icons/_icons.scss */
+.wsk-icon--hearing:before {
+  content: "\f0aa";
+}
+
+/* line 1359, ../styleguide/icons/_icons.scss */
+.wsk-icon--high-quality:before {
+  content: "\f0ab";
+}
+
+/* line 1362, ../styleguide/icons/_icons.scss */
+.wsk-icon--loop:before {
+  content: "\f0ac";
+}
+
+/* line 1365, ../styleguide/icons/_icons.scss */
+.wsk-icon--mic:before {
+  content: "\f0ad";
+}
+
+/* line 1368, ../styleguide/icons/_icons.scss */
+.wsk-icon--mic-none:before {
+  content: "\f0ae";
+}
+
+/* line 1371, ../styleguide/icons/_icons.scss */
+.wsk-icon--mic-off:before {
+  content: "\f0af";
+}
+
+/* line 1374, ../styleguide/icons/_icons.scss */
+.wsk-icon--movie:before {
+  content: "\f0b0";
+}
+
+/* line 1377, ../styleguide/icons/_icons.scss */
+.wsk-icon--my-library-add:before {
+  content: "\f0b1";
+}
+
+/* line 1380, ../styleguide/icons/_icons.scss */
+.wsk-icon--my-library-books:before {
+  content: "\f0b2";
+}
+
+/* line 1383, ../styleguide/icons/_icons.scss */
+.wsk-icon--my-library-music:before {
+  content: "\f0b3";
+}
+
+/* line 1386, ../styleguide/icons/_icons.scss */
+.wsk-icon--new-releases:before {
+  content: "\f0b4";
+}
+
+/* line 1389, ../styleguide/icons/_icons.scss */
+.wsk-icon--not-interested:before {
+  content: "\f0b5";
+}
+
+/* line 1392, ../styleguide/icons/_icons.scss */
+.wsk-icon--pause:before {
+  content: "\f0b6";
+}
+
+/* line 1395, ../styleguide/icons/_icons.scss */
+.wsk-icon--pause-circle-fill:before {
+  content: "\f0b7";
+}
+
+/* line 1398, ../styleguide/icons/_icons.scss */
+.wsk-icon--pause-circle-outline:before {
+  content: "\f0b8";
+}
+
+/* line 1401, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-arrow:before {
+  content: "\f0b9";
+}
+
+/* line 1404, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-circle-fill:before {
+  content: "\f0ba";
+}
+
+/* line 1407, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-circle-outline:before {
+  content: "\f0bb";
+}
+
+/* line 1410, ../styleguide/icons/_icons.scss */
+.wsk-icon--playlist-add:before {
+  content: "\f0bc";
+}
+
+/* line 1413, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-shopping-bag:before {
+  content: "\f0bd";
+}
+
+/* line 1416, ../styleguide/icons/_icons.scss */
+.wsk-icon--queue:before {
+  content: "\f0be";
+}
+
+/* line 1419, ../styleguide/icons/_icons.scss */
+.wsk-icon--queue-music:before {
+  content: "\f0bf";
+}
+
+/* line 1422, ../styleguide/icons/_icons.scss */
+.wsk-icon--radio:before {
+  content: "\f0c0";
+}
+
+/* line 1425, ../styleguide/icons/_icons.scss */
+.wsk-icon--recent-actors:before {
+  content: "\f0c1";
+}
+
+/* line 1428, ../styleguide/icons/_icons.scss */
+.wsk-icon--repeat:before {
+  content: "\f0c2";
+}
+
+/* line 1431, ../styleguide/icons/_icons.scss */
+.wsk-icon--repeat-one:before {
+  content: "\f0c3";
+}
+
+/* line 1434, ../styleguide/icons/_icons.scss */
+.wsk-icon--replay:before {
+  content: "\f0c4";
+}
+
+/* line 1437, ../styleguide/icons/_icons.scss */
+.wsk-icon--shuffle:before {
+  content: "\f0c5";
+}
+
+/* line 1440, ../styleguide/icons/_icons.scss */
+.wsk-icon--skip-next:before {
+  content: "\f0c6";
+}
+
+/* line 1443, ../styleguide/icons/_icons.scss */
+.wsk-icon--skip-previous:before {
+  content: "\f0c7";
+}
+
+/* line 1446, ../styleguide/icons/_icons.scss */
+.wsk-icon--snooze:before {
+  content: "\f0c8";
+}
+
+/* line 1449, ../styleguide/icons/_icons.scss */
+.wsk-icon--stop:before {
+  content: "\f0c9";
+}
+
+/* line 1452, ../styleguide/icons/_icons.scss */
+.wsk-icon--subtitles:before {
+  content: "\f0ca";
+}
+
+/* line 1455, ../styleguide/icons/_icons.scss */
+.wsk-icon--surround-sound:before {
+  content: "\f0cb";
+}
+
+/* line 1458, ../styleguide/icons/_icons.scss */
+.wsk-icon--videocam:before {
+  content: "\f0cc";
+}
+
+/* line 1461, ../styleguide/icons/_icons.scss */
+.wsk-icon--videocam-off:before {
+  content: "\f0cd";
+}
+
+/* line 1464, ../styleguide/icons/_icons.scss */
+.wsk-icon--video-collection:before {
+  content: "\f0ce";
+}
+
+/* line 1467, ../styleguide/icons/_icons.scss */
+.wsk-icon--volume-down:before {
+  content: "\f0cf";
+}
+
+/* line 1470, ../styleguide/icons/_icons.scss */
+.wsk-icon--volume-mute:before {
+  content: "\f0d0";
+}
+
+/* line 1473, ../styleguide/icons/_icons.scss */
+.wsk-icon--volume-off:before {
+  content: "\f0d1";
+}
+
+/* line 1476, ../styleguide/icons/_icons.scss */
+.wsk-icon--volume-up:before {
+  content: "\f0d2";
+}
+
+/* line 1479, ../styleguide/icons/_icons.scss */
+.wsk-icon--web:before {
+  content: "\f0d3";
+}
+
+/* line 1484, ../styleguide/icons/_icons.scss */
+.wsk-icon--business:before {
+  content: "\f0d4";
+}
+
+/* line 1487, ../styleguide/icons/_icons.scss */
+.wsk-icon--call:before {
+  content: "\f0d5";
+}
+
+/* line 1490, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-end:before {
+  content: "\f0d6";
+}
+
+/* line 1493, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-made:before {
+  content: "\f0d7";
+}
+
+/* line 1496, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-merge:before {
+  content: "\f0d8";
+}
+
+/* line 1499, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-missed:before {
+  content: "\f0d9";
+}
+
+/* line 1502, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-received:before {
+  content: "\f0da";
+}
+
+/* line 1505, ../styleguide/icons/_icons.scss */
+.wsk-icon--call-split:before {
+  content: "\f0db";
+}
+
+/* line 1508, ../styleguide/icons/_icons.scss */
+.wsk-icon--chat:before {
+  content: "\f0dc";
+}
+
+/* line 1511, ../styleguide/icons/_icons.scss */
+.wsk-icon--clear-all:before {
+  content: "\f0dd";
+}
+
+/* line 1514, ../styleguide/icons/_icons.scss */
+.wsk-icon--comment:before {
+  content: "\f0de";
+}
+
+/* line 1517, ../styleguide/icons/_icons.scss */
+.wsk-icon--contacts:before {
+  content: "\f0df";
+}
+
+/* line 1520, ../styleguide/icons/_icons.scss */
+.wsk-icon--dialer-sip:before {
+  content: "\f0e0";
+}
+
+/* line 1523, ../styleguide/icons/_icons.scss */
+.wsk-icon--dialpad:before {
+  content: "\f0e1";
+}
+
+/* line 1526, ../styleguide/icons/_icons.scss */
+.wsk-icon--dnd-on:before {
+  content: "\f0e2";
+}
+
+/* line 1529, ../styleguide/icons/_icons.scss */
+.wsk-icon--email:before {
+  content: "\f0e3";
+}
+
+/* line 1532, ../styleguide/icons/_icons.scss */
+.wsk-icon--forum:before {
+  content: "\f0e4";
+}
+
+/* line 1535, ../styleguide/icons/_icons.scss */
+.wsk-icon--import-export:before {
+  content: "\f0e5";
+}
+
+/* line 1538, ../styleguide/icons/_icons.scss */
+.wsk-icon--invert-colors-off:before {
+  content: "\f0e6";
+}
+
+/* line 1541, ../styleguide/icons/_icons.scss */
+.wsk-icon--invert-colors-on:before {
+  content: "\f0e7";
+}
+
+/* line 1544, ../styleguide/icons/_icons.scss */
+.wsk-icon--live-help:before {
+  content: "\f0e8";
+}
+
+/* line 1547, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-off:before {
+  content: "\f0e9";
+}
+
+/* line 1550, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-on:before {
+  content: "\f0ea";
+}
+
+/* line 1553, ../styleguide/icons/_icons.scss */
+.wsk-icon--message:before {
+  content: "\f0eb";
+}
+
+/* line 1556, ../styleguide/icons/_icons.scss */
+.wsk-icon--messenger:before {
+  content: "\f0ec";
+}
+
+/* line 1559, ../styleguide/icons/_icons.scss */
+.wsk-icon--no-sim:before {
+  content: "\f0ed";
+}
+
+/* line 1562, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone:before {
+  content: "\f0ee";
+}
+
+/* line 1565, ../styleguide/icons/_icons.scss */
+.wsk-icon--portable-wifi-off:before {
+  content: "\f0ef";
+}
+
+/* line 1568, ../styleguide/icons/_icons.scss */
+.wsk-icon--quick-contacts-dialer:before {
+  content: "\f0f0";
+}
+
+/* line 1571, ../styleguide/icons/_icons.scss */
+.wsk-icon--quick-contacts-mail:before {
+  content: "\f0f1";
+}
+
+/* line 1574, ../styleguide/icons/_icons.scss */
+.wsk-icon--ring-volume:before {
+  content: "\f0f2";
+}
+
+/* line 1577, ../styleguide/icons/_icons.scss */
+.wsk-icon--stay-current-landscape:before {
+  content: "\f0f3";
+}
+
+/* line 1580, ../styleguide/icons/_icons.scss */
+.wsk-icon--stay-current-portrait:before {
+  content: "\f0f4";
+}
+
+/* line 1583, ../styleguide/icons/_icons.scss */
+.wsk-icon--stay-primary-landscape:before {
+  content: "\f0f5";
+}
+
+/* line 1586, ../styleguide/icons/_icons.scss */
+.wsk-icon--stay-primary-portrait:before {
+  content: "\f0f6";
+}
+
+/* line 1589, ../styleguide/icons/_icons.scss */
+.wsk-icon--swap-calls:before {
+  content: "\f0f7";
+}
+
+/* line 1592, ../styleguide/icons/_icons.scss */
+.wsk-icon--textsms:before {
+  content: "\f0f8";
+}
+
+/* line 1595, ../styleguide/icons/_icons.scss */
+.wsk-icon--voicemail:before {
+  content: "\f0f9";
+}
+
+/* line 1598, ../styleguide/icons/_icons.scss */
+.wsk-icon--vpn-key:before {
+  content: "\f0fa";
+}
+
+/* line 1603, ../styleguide/icons/_icons.scss */
+.wsk-icon--add:before {
+  content: "\f0fb";
+}
+
+/* line 1606, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-box:before {
+  content: "\f0fc";
+}
+
+/* line 1609, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-circle:before {
+  content: "\f0fd";
+}
+
+/* line 1612, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-circle-outline:before {
+  content: "\f0fe";
+}
+
+/* line 1615, ../styleguide/icons/_icons.scss */
+.wsk-icon--archive:before {
+  content: "\f0ff";
+}
+
+/* line 1618, ../styleguide/icons/_icons.scss */
+.wsk-icon--backspace:before {
+  content: "\f100";
+}
+
+/* line 1621, ../styleguide/icons/_icons.scss */
+.wsk-icon--block:before {
+  content: "\f101";
+}
+
+/* line 1624, ../styleguide/icons/_icons.scss */
+.wsk-icon--clear:before {
+  content: "\f102";
+}
+
+/* line 1627, ../styleguide/icons/_icons.scss */
+.wsk-icon--content-copy:before {
+  content: "\f103";
+}
+
+/* line 1630, ../styleguide/icons/_icons.scss */
+.wsk-icon--content-cut:before {
+  content: "\f104";
+}
+
+/* line 1633, ../styleguide/icons/_icons.scss */
+.wsk-icon--content-paste:before {
+  content: "\f105";
+}
+
+/* line 1636, ../styleguide/icons/_icons.scss */
+.wsk-icon--create:before {
+  content: "\f106";
+}
+
+/* line 1639, ../styleguide/icons/_icons.scss */
+.wsk-icon--drafts:before {
+  content: "\f107";
+}
+
+/* line 1642, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-list:before {
+  content: "\f108";
+}
+
+/* line 1645, ../styleguide/icons/_icons.scss */
+.wsk-icon--flag:before {
+  content: "\f109";
+}
+
+/* line 1648, ../styleguide/icons/_icons.scss */
+.wsk-icon--forward:before {
+  content: "\f10a";
+}
+
+/* line 1651, ../styleguide/icons/_icons.scss */
+.wsk-icon--gesture:before {
+  content: "\f10b";
+}
+
+/* line 1654, ../styleguide/icons/_icons.scss */
+.wsk-icon--inbox:before {
+  content: "\f10c";
+}
+
+/* line 1657, ../styleguide/icons/_icons.scss */
+.wsk-icon--link:before {
+  content: "\f10d";
+}
+
+/* line 1660, ../styleguide/icons/_icons.scss */
+.wsk-icon--mail:before {
+  content: "\f10e";
+}
+
+/* line 1663, ../styleguide/icons/_icons.scss */
+.wsk-icon--markunread:before {
+  content: "\f10f";
+}
+
+/* line 1666, ../styleguide/icons/_icons.scss */
+.wsk-icon--redo:before {
+  content: "\f110";
+}
+
+/* line 1669, ../styleguide/icons/_icons.scss */
+.wsk-icon--remove:before {
+  content: "\f111";
+}
+
+/* line 1672, ../styleguide/icons/_icons.scss */
+.wsk-icon--remove-circle:before {
+  content: "\f112";
+}
+
+/* line 1675, ../styleguide/icons/_icons.scss */
+.wsk-icon--remove-circle-outline:before {
+  content: "\f113";
+}
+
+/* line 1678, ../styleguide/icons/_icons.scss */
+.wsk-icon--reply:before {
+  content: "\f114";
+}
+
+/* line 1681, ../styleguide/icons/_icons.scss */
+.wsk-icon--reply-all:before {
+  content: "\f115";
+}
+
+/* line 1684, ../styleguide/icons/_icons.scss */
+.wsk-icon--report:before {
+  content: "\f116";
+}
+
+/* line 1687, ../styleguide/icons/_icons.scss */
+.wsk-icon--save:before {
+  content: "\f117";
+}
+
+/* line 1690, ../styleguide/icons/_icons.scss */
+.wsk-icon--select-all:before {
+  content: "\f118";
+}
+
+/* line 1693, ../styleguide/icons/_icons.scss */
+.wsk-icon--send:before {
+  content: "\f119";
+}
+
+/* line 1696, ../styleguide/icons/_icons.scss */
+.wsk-icon--sort:before {
+  content: "\f11a";
+}
+
+/* line 1699, ../styleguide/icons/_icons.scss */
+.wsk-icon--text-format:before {
+  content: "\f11b";
+}
+
+/* line 1702, ../styleguide/icons/_icons.scss */
+.wsk-icon--undo:before {
+  content: "\f11c";
+}
+
+/* line 1707, ../styleguide/icons/_icons.scss */
+.wsk-icon--access-alarm:before {
+  content: "\f11d";
+}
+
+/* line 1710, ../styleguide/icons/_icons.scss */
+.wsk-icon--access-alarms:before {
+  content: "\f11e";
+}
+
+/* line 1713, ../styleguide/icons/_icons.scss */
+.wsk-icon--access-time:before {
+  content: "\f11f";
+}
+
+/* line 1716, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-alarm:before {
+  content: "\f120";
+}
+
+/* line 1719, ../styleguide/icons/_icons.scss */
+.wsk-icon--airplanemode-off:before {
+  content: "\f121";
+}
+
+/* line 1722, ../styleguide/icons/_icons.scss */
+.wsk-icon--airplanemode-on:before {
+  content: "\f122";
+}
+
+/* line 1725, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-20:before {
+  content: "\f123";
+}
+
+/* line 1728, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-30:before {
+  content: "\f124";
+}
+
+/* line 1731, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-50:before {
+  content: "\f125";
+}
+
+/* line 1734, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-60:before {
+  content: "\f126";
+}
+
+/* line 1737, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-80:before {
+  content: "\f127";
+}
+
+/* line 1740, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-90:before {
+  content: "\f128";
+}
+
+/* line 1743, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-alert:before {
+  content: "\f129";
+}
+
+/* line 1746, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-20:before {
+  content: "\f12a";
+}
+
+/* line 1749, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-30:before {
+  content: "\f12b";
+}
+
+/* line 1752, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-50:before {
+  content: "\f12c";
+}
+
+/* line 1755, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-60:before {
+  content: "\f12d";
+}
+
+/* line 1758, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-80:before {
+  content: "\f12e";
+}
+
+/* line 1761, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-90:before {
+  content: "\f12f";
+}
+
+/* line 1764, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-charging-full:before {
+  content: "\f130";
+}
+
+/* line 1767, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-full:before {
+  content: "\f131";
+}
+
+/* line 1770, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-std:before {
+  content: "\f132";
+}
+
+/* line 1773, ../styleguide/icons/_icons.scss */
+.wsk-icon--battery-unknown:before {
+  content: "\f133";
+}
+
+/* line 1776, ../styleguide/icons/_icons.scss */
+.wsk-icon--bluetooth:before {
+  content: "\f134";
+}
+
+/* line 1779, ../styleguide/icons/_icons.scss */
+.wsk-icon--bluetooth-connected:before {
+  content: "\f135";
+}
+
+/* line 1782, ../styleguide/icons/_icons.scss */
+.wsk-icon--bluetooth-disabled:before {
+  content: "\f136";
+}
+
+/* line 1785, ../styleguide/icons/_icons.scss */
+.wsk-icon--bluetooth-searching:before {
+  content: "\f137";
+}
+
+/* line 1788, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-auto:before {
+  content: "\f138";
+}
+
+/* line 1791, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-high:before {
+  content: "\f139";
+}
+
+/* line 1794, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-low:before {
+  content: "\f13a";
+}
+
+/* line 1797, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-medium:before {
+  content: "\f13b";
+}
+
+/* line 1800, ../styleguide/icons/_icons.scss */
+.wsk-icon--data-usage:before {
+  content: "\f13c";
+}
+
+/* line 1803, ../styleguide/icons/_icons.scss */
+.wsk-icon--developer-mode:before {
+  content: "\f13d";
+}
+
+/* line 1806, ../styleguide/icons/_icons.scss */
+.wsk-icon--devices:before {
+  content: "\f13e";
+}
+
+/* line 1809, ../styleguide/icons/_icons.scss */
+.wsk-icon--dvr:before {
+  content: "\f13f";
+}
+
+/* line 1812, ../styleguide/icons/_icons.scss */
+.wsk-icon--gps-fixed:before {
+  content: "\f140";
+}
+
+/* line 1815, ../styleguide/icons/_icons.scss */
+.wsk-icon--gps-not-fixed:before {
+  content: "\f141";
+}
+
+/* line 1818, ../styleguide/icons/_icons.scss */
+.wsk-icon--gps-off:before {
+  content: "\f142";
+}
+
+/* line 1821, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-disabled:before {
+  content: "\f143";
+}
+
+/* line 1824, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-searching:before {
+  content: "\f144";
+}
+
+/* line 1827, ../styleguide/icons/_icons.scss */
+.wsk-icon--multitrack-audio:before {
+  content: "\f145";
+}
+
+/* line 1830, ../styleguide/icons/_icons.scss */
+.wsk-icon--network-cell:before {
+  content: "\f146";
+}
+
+/* line 1833, ../styleguide/icons/_icons.scss */
+.wsk-icon--network-wifi:before {
+  content: "\f147";
+}
+
+/* line 1836, ../styleguide/icons/_icons.scss */
+.wsk-icon--nfc:before {
+  content: "\f148";
+}
+
+/* line 1839, ../styleguide/icons/_icons.scss */
+.wsk-icon--now-wallpaper:before {
+  content: "\f149";
+}
+
+/* line 1842, ../styleguide/icons/_icons.scss */
+.wsk-icon--now-widgets:before {
+  content: "\f14a";
+}
+
+/* line 1845, ../styleguide/icons/_icons.scss */
+.wsk-icon--screen-lock-landscape:before {
+  content: "\f14b";
+}
+
+/* line 1848, ../styleguide/icons/_icons.scss */
+.wsk-icon--screen-lock-portrait:before {
+  content: "\f14c";
+}
+
+/* line 1851, ../styleguide/icons/_icons.scss */
+.wsk-icon--screen-lock-rotation:before {
+  content: "\f14d";
+}
+
+/* line 1854, ../styleguide/icons/_icons.scss */
+.wsk-icon--screen-rotation:before {
+  content: "\f14e";
+}
+
+/* line 1857, ../styleguide/icons/_icons.scss */
+.wsk-icon--sd-storage:before {
+  content: "\f14f";
+}
+
+/* line 1860, ../styleguide/icons/_icons.scss */
+.wsk-icon--settings-system-daydream:before {
+  content: "\f150";
+}
+
+/* line 1863, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-0-bar:before {
+  content: "\f151";
+}
+
+/* line 1866, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-1-bar:before {
+  content: "\f152";
+}
+
+/* line 1869, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-2-bar:before {
+  content: "\f153";
+}
+
+/* line 1872, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-3-bar:before {
+  content: "\f154";
+}
+
+/* line 1875, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-4-bar:before {
+  content: "\f155";
+}
+
+/* line 1878, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-connected-no-internet-0-bar:before {
+  content: "\f156";
+}
+
+/* line 1881, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-connected-no-internet-1-bar:before {
+  content: "\f157";
+}
+
+/* line 1884, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-connected-no-internet-2-bar:before {
+  content: "\f158";
+}
+
+/* line 1887, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-connected-no-internet-3-bar:before {
+  content: "\f159";
+}
+
+/* line 1890, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-connected-no-internet-4-bar:before {
+  content: "\f15a";
+}
+
+/* line 1893, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-no-sim:before {
+  content: "\f15b";
+}
+
+/* line 1896, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-null:before {
+  content: "\f15c";
+}
+
+/* line 1899, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-cellular-off:before {
+  content: "\f15d";
+}
+
+/* line 1902, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-0-bar:before {
+  content: "\f15e";
+}
+
+/* line 1905, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-1-bar:before {
+  content: "\f15f";
+}
+
+/* line 1908, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-2-bar:before {
+  content: "\f160";
+}
+
+/* line 1911, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-3-bar:before {
+  content: "\f161";
+}
+
+/* line 1914, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-4-bar:before {
+  content: "\f162";
+}
+
+/* line 1917, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-off:before {
+  content: "\f163";
+}
+
+/* line 1920, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-1-bar:before {
+  content: "\f15f";
+}
+
+/* line 1923, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-2-bar:before {
+  content: "\f160";
+}
+
+/* line 1926, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-3-bar:before {
+  content: "\f161";
+}
+
+/* line 1929, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-4-bar:before {
+  content: "\f162";
+}
+
+/* line 1932, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-connected-no-internet:before {
+  content: "";
+}
+
+/* line 1935, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-connected-no-internet-1:before {
+  content: "";
+}
+
+/* line 1938, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-connected-no-internet-2:before {
+  content: "";
+}
+
+/* line 1941, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-connected-no-internet-3:before {
+  content: "";
+}
+
+/* line 1944, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-connected-no-internet-4:before {
+  content: "";
+}
+
+/* line 1947, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-not-connected:before {
+  content: "";
+}
+
+/* line 1950, ../styleguide/icons/_icons.scss */
+.wsk-icon--signal-wifi-statusbar-null:before {
+  content: "";
+}
+
+/* line 1953, ../styleguide/icons/_icons.scss */
+.wsk-icon--storage:before {
+  content: "\f164";
+}
+
+/* line 1956, ../styleguide/icons/_icons.scss */
+.wsk-icon--usb:before {
+  content: "\f165";
+}
+
+/* line 1959, ../styleguide/icons/_icons.scss */
+.wsk-icon--wifi-lock:before {
+  content: "\f166";
+}
+
+/* line 1962, ../styleguide/icons/_icons.scss */
+.wsk-icon--wifi-tethering:before {
+  content: "\f167";
+}
+
+/* line 1967, ../styleguide/icons/_icons.scss */
+.wsk-icon--attach-file:before {
+  content: "\f168";
+}
+
+/* line 1970, ../styleguide/icons/_icons.scss */
+.wsk-icon--attach-money:before {
+  content: "\f169";
+}
+
+/* line 1973, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-all:before {
+  content: "\f16a";
+}
+
+/* line 1976, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-bottom:before {
+  content: "\f16b";
+}
+
+/* line 1979, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-clear:before {
+  content: "\f16c";
+}
+
+/* line 1982, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-color:before {
+  content: "\f16d";
+}
+
+/* line 1985, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-horizontal:before {
+  content: "\f16e";
+}
+
+/* line 1988, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-inner:before {
+  content: "\f16f";
+}
+
+/* line 1991, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-left:before {
+  content: "\f170";
+}
+
+/* line 1994, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-outer:before {
+  content: "\f171";
+}
+
+/* line 1997, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-right:before {
+  content: "\f172";
+}
+
+/* line 2000, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-style:before {
+  content: "\f173";
+}
+
+/* line 2003, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-top:before {
+  content: "\f174";
+}
+
+/* line 2006, ../styleguide/icons/_icons.scss */
+.wsk-icon--border-vertical:before {
+  content: "\f175";
+}
+
+/* line 2009, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-align-center:before {
+  content: "\f176";
+}
+
+/* line 2012, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-align-justify:before {
+  content: "\f177";
+}
+
+/* line 2015, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-align-left:before {
+  content: "\f178";
+}
+
+/* line 2018, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-align-right:before {
+  content: "\f179";
+}
+
+/* line 2021, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-bold:before {
+  content: "\f17a";
+}
+
+/* line 2024, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-clear:before {
+  content: "\f17b";
+}
+
+/* line 2027, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-color-fill:before {
+  content: "\f17c";
+}
+
+/* line 2030, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-color-reset:before {
+  content: "\f17d";
+}
+
+/* line 2033, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-color-text:before {
+  content: "\f17e";
+}
+
+/* line 2036, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-indent-decrease:before {
+  content: "\f17f";
+}
+
+/* line 2039, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-indent-increase:before {
+  content: "\f180";
+}
+
+/* line 2042, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-italic:before {
+  content: "\f181";
+}
+
+/* line 2045, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-line-spacing:before {
+  content: "\f182";
+}
+
+/* line 2048, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-list-bulleted:before {
+  content: "\f183";
+}
+
+/* line 2051, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-list-numbered:before {
+  content: "\f184";
+}
+
+/* line 2054, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-paint:before {
+  content: "\f185";
+}
+
+/* line 2057, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-quote:before {
+  content: "\f186";
+}
+
+/* line 2060, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-size:before {
+  content: "\f187";
+}
+
+/* line 2063, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-strikethrough:before {
+  content: "\f188";
+}
+
+/* line 2066, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-textdirection-l-to-r:before {
+  content: "\f189";
+}
+
+/* line 2069, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-textdirection-r-to-l:before {
+  content: "\f18a";
+}
+
+/* line 2072, ../styleguide/icons/_icons.scss */
+.wsk-icon--format-underline:before {
+  content: "\f18b";
+}
+
+/* line 2075, ../styleguide/icons/_icons.scss */
+.wsk-icon--functions:before {
+  content: "\f18c";
+}
+
+/* line 2078, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-chart:before {
+  content: "\f18d";
+}
+
+/* line 2081, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-comment:before {
+  content: "\f18e";
+}
+
+/* line 2084, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-drive-file:before {
+  content: "\f18f";
+}
+
+/* line 2087, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-emoticon:before {
+  content: "\f190";
+}
+
+/* line 2090, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-invitation:before {
+  content: "\f191";
+}
+
+/* line 2093, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-link:before {
+  content: "\f192";
+}
+
+/* line 2096, ../styleguide/icons/_icons.scss */
+.wsk-icon--insert-photo:before {
+  content: "\f193";
+}
+
+/* line 2099, ../styleguide/icons/_icons.scss */
+.wsk-icon--merge-type:before {
+  content: "\f194";
+}
+
+/* line 2102, ../styleguide/icons/_icons.scss */
+.wsk-icon--mode-comment:before {
+  content: "\f195";
+}
+
+/* line 2105, ../styleguide/icons/_icons.scss */
+.wsk-icon--mode-edit:before {
+  content: "\f196";
+}
+
+/* line 2108, ../styleguide/icons/_icons.scss */
+.wsk-icon--publish:before {
+  content: "\f197";
+}
+
+/* line 2111, ../styleguide/icons/_icons.scss */
+.wsk-icon--vertical-align-bottom:before {
+  content: "\f198";
+}
+
+/* line 2114, ../styleguide/icons/_icons.scss */
+.wsk-icon--vertical-align-center:before {
+  content: "\f199";
+}
+
+/* line 2117, ../styleguide/icons/_icons.scss */
+.wsk-icon--vertical-align-top:before {
+  content: "\f19a";
+}
+
+/* line 2120, ../styleguide/icons/_icons.scss */
+.wsk-icon--wrap-text:before {
+  content: "\f19b";
+}
+
+/* line 2125, ../styleguide/icons/_icons.scss */
+.wsk-icon--attachment:before {
+  content: "\f19c";
+}
+
+/* line 2128, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud:before {
+  content: "\f19d";
+}
+
+/* line 2131, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-circle:before {
+  content: "\f19e";
+}
+
+/* line 2134, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-done:before {
+  content: "\f19f";
+}
+
+/* line 2137, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-download:before {
+  content: "\f1a0";
+}
+
+/* line 2140, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-off:before {
+  content: "\f1a1";
+}
+
+/* line 2143, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-queue:before {
+  content: "\f1a2";
+}
+
+/* line 2146, ../styleguide/icons/_icons.scss */
+.wsk-icon--cloud-upload:before {
+  content: "\f1a3";
+}
+
+/* line 2149, ../styleguide/icons/_icons.scss */
+.wsk-icon--file-download:before {
+  content: "\f1a4";
+}
+
+/* line 2152, ../styleguide/icons/_icons.scss */
+.wsk-icon--file-upload:before {
+  content: "\f1a5";
+}
+
+/* line 2155, ../styleguide/icons/_icons.scss */
+.wsk-icon--folder:before {
+  content: "\f1a6";
+}
+
+/* line 2158, ../styleguide/icons/_icons.scss */
+.wsk-icon--folder-open:before {
+  content: "\f1a7";
+}
+
+/* line 2161, ../styleguide/icons/_icons.scss */
+.wsk-icon--folder-shared:before {
+  content: "\f1a8";
+}
+
+/* line 2166, ../styleguide/icons/_icons.scss */
+.wsk-icon--cast:before {
+  content: "\f1a9";
+}
+
+/* line 2169, ../styleguide/icons/_icons.scss */
+.wsk-icon--cast-connected:before {
+  content: "\f1aa";
+}
+
+/* line 2172, ../styleguide/icons/_icons.scss */
+.wsk-icon--computer:before {
+  content: "\f1ab";
+}
+
+/* line 2175, ../styleguide/icons/_icons.scss */
+.wsk-icon--desktop-mac:before {
+  content: "\f1ac";
+}
+
+/* line 2178, ../styleguide/icons/_icons.scss */
+.wsk-icon--desktop-windows:before {
+  content: "\f1ad";
+}
+
+/* line 2181, ../styleguide/icons/_icons.scss */
+.wsk-icon--dock:before {
+  content: "\f1ae";
+}
+
+/* line 2184, ../styleguide/icons/_icons.scss */
+.wsk-icon--gamepad:before {
+  content: "\f1af";
+}
+
+/* line 2187, ../styleguide/icons/_icons.scss */
+.wsk-icon--headset:before {
+  content: "\f1b0";
+}
+
+/* line 2190, ../styleguide/icons/_icons.scss */
+.wsk-icon--headset-mic:before {
+  content: "\f1b1";
+}
+
+/* line 2193, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard:before {
+  content: "\f1b2";
+}
+
+/* line 2196, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-alt:before {
+  content: "\f1b3";
+}
+
+/* line 2199, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-arrow-down:before {
+  content: "\f1b4";
+}
+
+/* line 2202, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-arrow-left:before {
+  content: "\f1b5";
+}
+
+/* line 2205, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-arrow-right:before {
+  content: "\f1b6";
+}
+
+/* line 2208, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-arrow-up:before {
+  content: "\f1b7";
+}
+
+/* line 2211, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-backspace:before {
+  content: "\f1b8";
+}
+
+/* line 2214, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-capslock:before {
+  content: "\f1b9";
+}
+
+/* line 2217, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-control:before {
+  content: "\f1ba";
+}
+
+/* line 2220, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-hide:before {
+  content: "\f1bb";
+}
+
+/* line 2223, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-return:before {
+  content: "\f1bc";
+}
+
+/* line 2226, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-tab:before {
+  content: "\f1bd";
+}
+
+/* line 2229, ../styleguide/icons/_icons.scss */
+.wsk-icon--keyboard-voice:before {
+  content: "\f1be";
+}
+
+/* line 2232, ../styleguide/icons/_icons.scss */
+.wsk-icon--laptop:before {
+  content: "\f1bf";
+}
+
+/* line 2235, ../styleguide/icons/_icons.scss */
+.wsk-icon--laptop-chromebook:before {
+  content: "\f1c0";
+}
+
+/* line 2238, ../styleguide/icons/_icons.scss */
+.wsk-icon--laptop-mac:before {
+  content: "\f1c1";
+}
+
+/* line 2241, ../styleguide/icons/_icons.scss */
+.wsk-icon--laptop-windows:before {
+  content: "\f1c2";
+}
+
+/* line 2244, ../styleguide/icons/_icons.scss */
+.wsk-icon--memory:before {
+  content: "\f1c3";
+}
+
+/* line 2247, ../styleguide/icons/_icons.scss */
+.wsk-icon--mouse:before {
+  content: "\f1c4";
+}
+
+/* line 2250, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-android:before {
+  content: "\f1c5";
+}
+
+/* line 2253, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-iphone:before {
+  content: "\f1c6";
+}
+
+/* line 2256, ../styleguide/icons/_icons.scss */
+.wsk-icon--phonelink:before {
+  content: "\f1c7";
+}
+
+/* line 2259, ../styleguide/icons/_icons.scss */
+.wsk-icon--phonelink-off:before {
+  content: "\f1c8";
+}
+
+/* line 2262, ../styleguide/icons/_icons.scss */
+.wsk-icon--security:before {
+  content: "\f1c9";
+}
+
+/* line 2265, ../styleguide/icons/_icons.scss */
+.wsk-icon--sim-card:before {
+  content: "\f1ca";
+}
+
+/* line 2268, ../styleguide/icons/_icons.scss */
+.wsk-icon--smartphone:before {
+  content: "\f1cb";
+}
+
+/* line 2271, ../styleguide/icons/_icons.scss */
+.wsk-icon--speaker:before {
+  content: "\f1cc";
+}
+
+/* line 2274, ../styleguide/icons/_icons.scss */
+.wsk-icon--tablet:before {
+  content: "\f1cd";
+}
+
+/* line 2277, ../styleguide/icons/_icons.scss */
+.wsk-icon--tablet-android:before {
+  content: "\f1ce";
+}
+
+/* line 2280, ../styleguide/icons/_icons.scss */
+.wsk-icon--tablet-mac:before {
+  content: "\f1cf";
+}
+
+/* line 2283, ../styleguide/icons/_icons.scss */
+.wsk-icon--tv:before {
+  content: "\f1d0";
+}
+
+/* line 2286, ../styleguide/icons/_icons.scss */
+.wsk-icon--watch:before {
+  content: "\f1d1";
+}
+
+/* line 2291, ../styleguide/icons/_icons.scss */
+.wsk-icon--add-to-photos:before {
+  content: "\f1d2";
+}
+
+/* line 2294, ../styleguide/icons/_icons.scss */
+.wsk-icon--adjust:before {
+  content: "\f1d3";
+}
+
+/* line 2297, ../styleguide/icons/_icons.scss */
+.wsk-icon--assistant-photo:before {
+  content: "\f1d4";
+}
+
+/* line 2300, ../styleguide/icons/_icons.scss */
+.wsk-icon--audiotrack:before {
+  content: "\f1d5";
+}
+
+/* line 2303, ../styleguide/icons/_icons.scss */
+.wsk-icon--blur-circular:before {
+  content: "\f1d6";
+}
+
+/* line 2306, ../styleguide/icons/_icons.scss */
+.wsk-icon--blur-linear:before {
+  content: "\f1d7";
+}
+
+/* line 2309, ../styleguide/icons/_icons.scss */
+.wsk-icon--blur-off:before {
+  content: "\f1d8";
+}
+
+/* line 2312, ../styleguide/icons/_icons.scss */
+.wsk-icon--blur-on:before {
+  content: "\f1d9";
+}
+
+/* line 2315, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-1:before {
+  content: "\f1da";
+}
+
+/* line 2318, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-2:before {
+  content: "\f1db";
+}
+
+/* line 2321, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-3:before {
+  content: "\f1dc";
+}
+
+/* line 2324, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-4:before {
+  content: "\f1dd";
+}
+
+/* line 2327, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-5:before {
+  content: "\f1de";
+}
+
+/* line 2330, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-6:before {
+  content: "\f1df";
+}
+
+/* line 2333, ../styleguide/icons/_icons.scss */
+.wsk-icon--brightness-7:before {
+  content: "\f1e0";
+}
+
+/* line 2336, ../styleguide/icons/_icons.scss */
+.wsk-icon--brush:before {
+  content: "\f1e1";
+}
+
+/* line 2339, ../styleguide/icons/_icons.scss */
+.wsk-icon--camera:before {
+  content: "\f1e2";
+}
+
+/* line 2342, ../styleguide/icons/_icons.scss */
+.wsk-icon--camera-alt:before {
+  content: "\f1e3";
+}
+
+/* line 2345, ../styleguide/icons/_icons.scss */
+.wsk-icon--camera-front:before {
+  content: "\f1e4";
+}
+
+/* line 2348, ../styleguide/icons/_icons.scss */
+.wsk-icon--camera-rear:before {
+  content: "\f1e5";
+}
+
+/* line 2351, ../styleguide/icons/_icons.scss */
+.wsk-icon--camera-roll:before {
+  content: "\f1e6";
+}
+
+/* line 2354, ../styleguide/icons/_icons.scss */
+.wsk-icon--center-focus-strong:before {
+  content: "\f1e7";
+}
+
+/* line 2357, ../styleguide/icons/_icons.scss */
+.wsk-icon--center-focus-weak:before {
+  content: "\f1e8";
+}
+
+/* line 2360, ../styleguide/icons/_icons.scss */
+.wsk-icon--collections:before {
+  content: "\f1e9";
+}
+
+/* line 2363, ../styleguide/icons/_icons.scss */
+.wsk-icon--colorize:before {
+  content: "\f1ea";
+}
+
+/* line 2366, ../styleguide/icons/_icons.scss */
+.wsk-icon--color-lens:before {
+  content: "\f1eb";
+}
+
+/* line 2369, ../styleguide/icons/_icons.scss */
+.wsk-icon--compare:before {
+  content: "\f1ec";
+}
+
+/* line 2372, ../styleguide/icons/_icons.scss */
+.wsk-icon--control-point:before {
+  content: "\f1ed";
+}
+
+/* line 2375, ../styleguide/icons/_icons.scss */
+.wsk-icon--control-point-duplicate:before {
+  content: "\f1ee";
+}
+
+/* line 2378, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop:before {
+  content: "\f1ef";
+}
+
+/* line 2381, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-3-2:before {
+  content: "\f1f0";
+}
+
+/* line 2384, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-5-4:before {
+  content: "\f1f1";
+}
+
+/* line 2387, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-7-5:before {
+  content: "\f1f2";
+}
+
+/* line 2390, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-16-9:before {
+  content: "\f1f3";
+}
+
+/* line 2393, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-din:before {
+  content: "\f1f4";
+}
+
+/* line 2396, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-free:before {
+  content: "\f1f5";
+}
+
+/* line 2399, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-landscape:before {
+  content: "\f1f6";
+}
+
+/* line 2402, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-original:before {
+  content: "\f1f7";
+}
+
+/* line 2405, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-portrait:before {
+  content: "\f1f8";
+}
+
+/* line 2408, ../styleguide/icons/_icons.scss */
+.wsk-icon--crop-square:before {
+  content: "\f1f9";
+}
+
+/* line 2411, ../styleguide/icons/_icons.scss */
+.wsk-icon--dehaze:before {
+  content: "\f1fa";
+}
+
+/* line 2414, ../styleguide/icons/_icons.scss */
+.wsk-icon--details:before {
+  content: "\f1fb";
+}
+
+/* line 2417, ../styleguide/icons/_icons.scss */
+.wsk-icon--edit:before {
+  content: "\f1fc";
+}
+
+/* line 2420, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure:before {
+  content: "\f1fd";
+}
+
+/* line 2423, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure-minus-1:before {
+  content: "\f1fe";
+}
+
+/* line 2426, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure-minus-2:before {
+  content: "\f1ff";
+}
+
+/* line 2429, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure-zero:before {
+  content: "\f200";
+}
+
+/* line 2432, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure-plus-1:before {
+  content: "\f201";
+}
+
+/* line 2435, ../styleguide/icons/_icons.scss */
+.wsk-icon--exposure-plus-2:before {
+  content: "\f202";
+}
+
+/* line 2438, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter:before {
+  content: "\f203";
+}
+
+/* line 2441, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-1:before {
+  content: "\f204";
+}
+
+/* line 2444, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-2:before {
+  content: "\f205";
+}
+
+/* line 2447, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-3:before {
+  content: "\f206";
+}
+
+/* line 2450, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-4:before {
+  content: "\f207";
+}
+
+/* line 2453, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-5:before {
+  content: "\f208";
+}
+
+/* line 2456, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-6:before {
+  content: "\f209";
+}
+
+/* line 2459, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-7:before {
+  content: "\f20a";
+}
+
+/* line 2462, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-8:before {
+  content: "\f20b";
+}
+
+/* line 2465, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-9:before {
+  content: "\f20c";
+}
+
+/* line 2468, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-9-plus:before {
+  content: "\f20d";
+}
+
+/* line 2471, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-b-and-w:before {
+  content: "\f20e";
+}
+
+/* line 2474, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-center-focus:before {
+  content: "\f20f";
+}
+
+/* line 2477, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-drama:before {
+  content: "\f210";
+}
+
+/* line 2480, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-frames:before {
+  content: "\f211";
+}
+
+/* line 2483, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-hdr:before {
+  content: "\f212";
+}
+
+/* line 2486, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-none:before {
+  content: "\f213";
+}
+
+/* line 2489, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-tilt-shift:before {
+  content: "\f214";
+}
+
+/* line 2492, ../styleguide/icons/_icons.scss */
+.wsk-icon--filter-vintage:before {
+  content: "\f215";
+}
+
+/* line 2495, ../styleguide/icons/_icons.scss */
+.wsk-icon--flare:before {
+  content: "\f216";
+}
+
+/* line 2498, ../styleguide/icons/_icons.scss */
+.wsk-icon--flash-auto:before {
+  content: "\f217";
+}
+
+/* line 2501, ../styleguide/icons/_icons.scss */
+.wsk-icon--flash-off:before {
+  content: "\f218";
+}
+
+/* line 2504, ../styleguide/icons/_icons.scss */
+.wsk-icon--flash-on:before {
+  content: "\f219";
+}
+
+/* line 2507, ../styleguide/icons/_icons.scss */
+.wsk-icon--flip:before {
+  content: "\f21a";
+}
+
+/* line 2510, ../styleguide/icons/_icons.scss */
+.wsk-icon--gradient:before {
+  content: "\f21b";
+}
+
+/* line 2513, ../styleguide/icons/_icons.scss */
+.wsk-icon--grain:before {
+  content: "\f21c";
+}
+
+/* line 2516, ../styleguide/icons/_icons.scss */
+.wsk-icon--grid-off:before {
+  content: "\f21d";
+}
+
+/* line 2519, ../styleguide/icons/_icons.scss */
+.wsk-icon--grid-on:before {
+  content: "\f21e";
+}
+
+/* line 2522, ../styleguide/icons/_icons.scss */
+.wsk-icon--hdr-off:before {
+  content: "\f21f";
+}
+
+/* line 2525, ../styleguide/icons/_icons.scss */
+.wsk-icon--hdr-on:before {
+  content: "\f220";
+}
+
+/* line 2528, ../styleguide/icons/_icons.scss */
+.wsk-icon--hdr-strong:before {
+  content: "\f221";
+}
+
+/* line 2531, ../styleguide/icons/_icons.scss */
+.wsk-icon--hdr-weak:before {
+  content: "\f222";
+}
+
+/* line 2534, ../styleguide/icons/_icons.scss */
+.wsk-icon--healing:before {
+  content: "\f223";
+}
+
+/* line 2537, ../styleguide/icons/_icons.scss */
+.wsk-icon--image:before {
+  content: "\f224";
+}
+
+/* line 2540, ../styleguide/icons/_icons.scss */
+.wsk-icon--image-aspect-ratio:before {
+  content: "\f225";
+}
+
+/* line 2543, ../styleguide/icons/_icons.scss */
+.wsk-icon--iso:before {
+  content: "\f226";
+}
+
+/* line 2546, ../styleguide/icons/_icons.scss */
+.wsk-icon--landscape:before {
+  content: "\f227";
+}
+
+/* line 2549, ../styleguide/icons/_icons.scss */
+.wsk-icon--leak-add:before {
+  content: "\f228";
+}
+
+/* line 2552, ../styleguide/icons/_icons.scss */
+.wsk-icon--leak-remove:before {
+  content: "\f229";
+}
+
+/* line 2555, ../styleguide/icons/_icons.scss */
+.wsk-icon--lens:before {
+  content: "\f22a";
+}
+
+/* line 2558, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks:before {
+  content: "\f22b";
+}
+
+/* line 2561, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-1:before {
+  content: "\f22c";
+}
+
+/* line 2564, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-2:before {
+  content: "\f22d";
+}
+
+/* line 2567, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-3:before {
+  content: "\f22e";
+}
+
+/* line 2570, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-4:before {
+  content: "\f22f";
+}
+
+/* line 2573, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-5:before {
+  content: "\f230";
+}
+
+/* line 2576, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-6:before {
+  content: "\f231";
+}
+
+/* line 2579, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-one:before {
+  content: "\f22c";
+}
+
+/* line 2582, ../styleguide/icons/_icons.scss */
+.wsk-icon--looks-two:before {
+  content: "\f22d";
+}
+
+/* line 2585, ../styleguide/icons/_icons.scss */
+.wsk-icon--loupe:before {
+  content: "\f232";
+}
+
+/* line 2588, ../styleguide/icons/_icons.scss */
+.wsk-icon--movie-creation:before {
+  content: "\f233";
+}
+
+/* line 2591, ../styleguide/icons/_icons.scss */
+.wsk-icon--nature:before {
+  content: "\f234";
+}
+
+/* line 2594, ../styleguide/icons/_icons.scss */
+.wsk-icon--nature-people:before {
+  content: "\f235";
+}
+
+/* line 2597, ../styleguide/icons/_icons.scss */
+.wsk-icon--navigate-before:before {
+  content: "\f236";
+}
+
+/* line 2600, ../styleguide/icons/_icons.scss */
+.wsk-icon--navigate-next:before {
+  content: "\f237";
+}
+
+/* line 2603, ../styleguide/icons/_icons.scss */
+.wsk-icon--palette:before {
+  content: "\f238";
+}
+
+/* line 2606, ../styleguide/icons/_icons.scss */
+.wsk-icon--panorama:before {
+  content: "\f239";
+}
+
+/* line 2609, ../styleguide/icons/_icons.scss */
+.wsk-icon--panorama-fisheye:before {
+  content: "\f23a";
+}
+
+/* line 2612, ../styleguide/icons/_icons.scss */
+.wsk-icon--panorama-horizontal:before {
+  content: "\f23b";
+}
+
+/* line 2615, ../styleguide/icons/_icons.scss */
+.wsk-icon--panorama-vertical:before {
+  content: "\f23c";
+}
+
+/* line 2618, ../styleguide/icons/_icons.scss */
+.wsk-icon--panorama-wide-angle:before {
+  content: "\f23d";
+}
+
+/* line 2621, ../styleguide/icons/_icons.scss */
+.wsk-icon--photo:before {
+  content: "\f23e";
+}
+
+/* line 2624, ../styleguide/icons/_icons.scss */
+.wsk-icon--photo-album:before {
+  content: "\f23f";
+}
+
+/* line 2627, ../styleguide/icons/_icons.scss */
+.wsk-icon--photo-camera:before {
+  content: "\f240";
+}
+
+/* line 2630, ../styleguide/icons/_icons.scss */
+.wsk-icon--photo-library:before {
+  content: "\f241";
+}
+
+/* line 2633, ../styleguide/icons/_icons.scss */
+.wsk-icon--portrait:before {
+  content: "\f242";
+}
+
+/* line 2636, ../styleguide/icons/_icons.scss */
+.wsk-icon--remove-red-eye:before {
+  content: "\f243";
+}
+
+/* line 2639, ../styleguide/icons/_icons.scss */
+.wsk-icon--rotate-left:before {
+  content: "\f244";
+}
+
+/* line 2642, ../styleguide/icons/_icons.scss */
+.wsk-icon--rotate-right:before {
+  content: "\f245";
+}
+
+/* line 2645, ../styleguide/icons/_icons.scss */
+.wsk-icon--slideshow:before {
+  content: "\f246";
+}
+
+/* line 2648, ../styleguide/icons/_icons.scss */
+.wsk-icon--straighten:before {
+  content: "\f247";
+}
+
+/* line 2651, ../styleguide/icons/_icons.scss */
+.wsk-icon--style:before {
+  content: "\f248";
+}
+
+/* line 2654, ../styleguide/icons/_icons.scss */
+.wsk-icon--switch-camera:before {
+  content: "\f249";
+}
+
+/* line 2657, ../styleguide/icons/_icons.scss */
+.wsk-icon--switch-video:before {
+  content: "\f24a";
+}
+
+/* line 2660, ../styleguide/icons/_icons.scss */
+.wsk-icon--tag-faces:before {
+  content: "\f24b";
+}
+
+/* line 2663, ../styleguide/icons/_icons.scss */
+.wsk-icon--texture:before {
+  content: "\f24c";
+}
+
+/* line 2666, ../styleguide/icons/_icons.scss */
+.wsk-icon--timelapse:before {
+  content: "\f24d";
+}
+
+/* line 2669, ../styleguide/icons/_icons.scss */
+.wsk-icon--timer:before {
+  content: "\f24e";
+}
+
+/* line 2672, ../styleguide/icons/_icons.scss */
+.wsk-icon--timer-3:before {
+  content: "\f24f";
+}
+
+/* line 2675, ../styleguide/icons/_icons.scss */
+.wsk-icon--timer-10:before {
+  content: "\f250";
+}
+
+/* line 2678, ../styleguide/icons/_icons.scss */
+.wsk-icon--timer-auto:before {
+  content: "\f251";
+}
+
+/* line 2681, ../styleguide/icons/_icons.scss */
+.wsk-icon--timer-off:before {
+  content: "\f252";
+}
+
+/* line 2684, ../styleguide/icons/_icons.scss */
+.wsk-icon--tonality:before {
+  content: "\f253";
+}
+
+/* line 2687, ../styleguide/icons/_icons.scss */
+.wsk-icon--transform:before {
+  content: "\f254";
+}
+
+/* line 2690, ../styleguide/icons/_icons.scss */
+.wsk-icon--tune:before {
+  content: "\f255";
+}
+
+/* line 2693, ../styleguide/icons/_icons.scss */
+.wsk-icon--wb-auto:before {
+  content: "\f256";
+}
+
+/* line 2696, ../styleguide/icons/_icons.scss */
+.wsk-icon--wb-cloudy:before {
+  content: "\f257";
+}
+
+/* line 2699, ../styleguide/icons/_icons.scss */
+.wsk-icon--wb-incandescent:before {
+  content: "\f258";
+}
+
+/* line 2702, ../styleguide/icons/_icons.scss */
+.wsk-icon--wb-irradescent:before {
+  content: "\f259";
+}
+
+/* line 2705, ../styleguide/icons/_icons.scss */
+.wsk-icon--wb-sunny:before {
+  content: "\f25a";
+}
+
+/* line 2710, ../styleguide/icons/_icons.scss */
+.wsk-icon--beenhere:before {
+  content: "\f25b";
+}
+
+/* line 2713, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions:before {
+  content: "\f25c";
+}
+
+/* line 2716, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-bike:before {
+  content: "\f25d";
+}
+
+/* line 2719, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-bus:before {
+  content: "\f25e";
+}
+
+/* line 2722, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-car:before {
+  content: "\f25f";
+}
+
+/* line 2725, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-ferry:before {
+  content: "\f260";
+}
+
+/* line 2728, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-subway:before {
+  content: "\f261";
+}
+
+/* line 2731, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-train:before {
+  content: "\f262";
+}
+
+/* line 2734, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-transit:before {
+  content: "\f263";
+}
+
+/* line 2737, ../styleguide/icons/_icons.scss */
+.wsk-icon--directions-walk:before {
+  content: "\f264";
+}
+
+/* line 2740, ../styleguide/icons/_icons.scss */
+.wsk-icon--flight:before {
+  content: "\f265";
+}
+
+/* line 2743, ../styleguide/icons/_icons.scss */
+.wsk-icon--hotel:before {
+  content: "\f266";
+}
+
+/* line 2746, ../styleguide/icons/_icons.scss */
+.wsk-icon--layers:before {
+  content: "\f267";
+}
+
+/* line 2749, ../styleguide/icons/_icons.scss */
+.wsk-icon--layers-clear:before {
+  content: "\f268";
+}
+
+/* line 2752, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-airport:before {
+  content: "\f269";
+}
+
+/* line 2755, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-atm:before {
+  content: "\f26a";
+}
+
+/* line 2758, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-attraction:before {
+  content: "\f26b";
+}
+
+/* line 2761, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-bar:before {
+  content: "\f26c";
+}
+
+/* line 2764, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-cafe:before {
+  content: "\f26d";
+}
+
+/* line 2767, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-car-wash:before {
+  content: "\f26e";
+}
+
+/* line 2770, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-convenience-store:before {
+  content: "\f26f";
+}
+
+/* line 2773, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-drink:before {
+  content: "\f270";
+}
+
+/* line 2776, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-florist:before {
+  content: "\f271";
+}
+
+/* line 2779, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-gas-station:before {
+  content: "\f272";
+}
+
+/* line 2782, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-grocery-store:before {
+  content: "\f273";
+}
+
+/* line 2785, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-hospital:before {
+  content: "\f274";
+}
+
+/* line 2788, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-hotel:before {
+  content: "\f275";
+}
+
+/* line 2791, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-laundry-service:before {
+  content: "\f276";
+}
+
+/* line 2794, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-library:before {
+  content: "\f277";
+}
+
+/* line 2797, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-mall:before {
+  content: "\f278";
+}
+
+/* line 2800, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-movies:before {
+  content: "\f279";
+}
+
+/* line 2803, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-offer:before {
+  content: "\f27a";
+}
+
+/* line 2806, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-parking:before {
+  content: "\f27b";
+}
+
+/* line 2809, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-pharmacy:before {
+  content: "\f27c";
+}
+
+/* line 2812, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-phone:before {
+  content: "\f27d";
+}
+
+/* line 2815, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-pizza:before {
+  content: "\f27e";
+}
+
+/* line 2818, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-play:before {
+  content: "\f27f";
+}
+
+/* line 2821, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-post-office:before {
+  content: "\f280";
+}
+
+/* line 2824, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-print-shop:before {
+  content: "\f281";
+}
+
+/* line 2827, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-restaurant:before {
+  content: "\f282";
+}
+
+/* line 2830, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-see:before {
+  content: "\f283";
+}
+
+/* line 2833, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-shipping:before {
+  content: "\f284";
+}
+
+/* line 2836, ../styleguide/icons/_icons.scss */
+.wsk-icon--local-taxi:before {
+  content: "\f285";
+}
+
+/* line 2839, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-history:before {
+  content: "\f286";
+}
+
+/* line 2842, ../styleguide/icons/_icons.scss */
+.wsk-icon--map:before {
+  content: "\f287";
+}
+
+/* line 2845, ../styleguide/icons/_icons.scss */
+.wsk-icon--my-location:before {
+  content: "\f288";
+}
+
+/* line 2848, ../styleguide/icons/_icons.scss */
+.wsk-icon--navigation:before {
+  content: "\f289";
+}
+
+/* line 2851, ../styleguide/icons/_icons.scss */
+.wsk-icon--pin-drop:before {
+  content: "\f28a";
+}
+
+/* line 2854, ../styleguide/icons/_icons.scss */
+.wsk-icon--place:before {
+  content: "\f28b";
+}
+
+/* line 2857, ../styleguide/icons/_icons.scss */
+.wsk-icon--rate-review:before {
+  content: "\f28c";
+}
+
+/* line 2860, ../styleguide/icons/_icons.scss */
+.wsk-icon--restaurant-menu:before {
+  content: "\f28d";
+}
+
+/* line 2863, ../styleguide/icons/_icons.scss */
+.wsk-icon--satellite:before {
+  content: "\f28e";
+}
+
+/* line 2866, ../styleguide/icons/_icons.scss */
+.wsk-icon--store-mall-directory:before {
+  content: "\f28f";
+}
+
+/* line 2869, ../styleguide/icons/_icons.scss */
+.wsk-icon--terrain:before {
+  content: "\f290";
+}
+
+/* line 2872, ../styleguide/icons/_icons.scss */
+.wsk-icon--traffic:before {
+  content: "\f291";
+}
+
+/* line 2877, ../styleguide/icons/_icons.scss */
+.wsk-icon--apps:before {
+  content: "\f292";
+}
+
+/* line 2880, ../styleguide/icons/_icons.scss */
+.wsk-icon--cancel:before {
+  content: "\f293";
+}
+
+/* line 2883, ../styleguide/icons/_icons.scss */
+.wsk-icon--arrow-drop-down-circle:before {
+  content: "\f294";
+}
+
+/* line 2886, ../styleguide/icons/_icons.scss */
+.wsk-icon--arrow-drop-down:before {
+  content: "\f295";
+}
+
+/* line 2889, ../styleguide/icons/_icons.scss */
+.wsk-icon--arrow-drop-up:before {
+  content: "\f296";
+}
+
+/* line 2892, ../styleguide/icons/_icons.scss */
+.wsk-icon--arrow-back:before {
+  content: "\f297";
+}
+
+/* line 2895, ../styleguide/icons/_icons.scss */
+.wsk-icon--arrow-forward:before {
+  content: "\f298";
+}
+
+/* line 2898, ../styleguide/icons/_icons.scss */
+.wsk-icon--check:before {
+  content: "\f299";
+}
+
+/* line 2901, ../styleguide/icons/_icons.scss */
+.wsk-icon--close:before {
+  content: "\f29a";
+}
+
+/* line 2904, ../styleguide/icons/_icons.scss */
+.wsk-icon--chevron-left:before {
+  content: "\f29b";
+}
+
+/* line 2907, ../styleguide/icons/_icons.scss */
+.wsk-icon--chevron-right:before {
+  content: "\f29c";
+}
+
+/* line 2910, ../styleguide/icons/_icons.scss */
+.wsk-icon--expand-less:before {
+  content: "\f29d";
+}
+
+/* line 2913, ../styleguide/icons/_icons.scss */
+.wsk-icon--expand-more:before {
+  content: "\f29e";
+}
+
+/* line 2916, ../styleguide/icons/_icons.scss */
+.wsk-icon--fullscreen:before {
+  content: "\f29f";
+}
+
+/* line 2919, ../styleguide/icons/_icons.scss */
+.wsk-icon--fullscreen-exit:before {
+  content: "\f2a0";
+}
+
+/* line 2922, ../styleguide/icons/_icons.scss */
+.wsk-icon--menu:before {
+  content: "\f2a1";
+}
+
+/* line 2925, ../styleguide/icons/_icons.scss */
+.wsk-icon--more-horiz:before {
+  content: "\f2a2";
+}
+
+/* line 2928, ../styleguide/icons/_icons.scss */
+.wsk-icon--more-vert:before {
+  content: "\f2a3";
+}
+
+/* line 2931, ../styleguide/icons/_icons.scss */
+.wsk-icon--refresh:before {
+  content: "\f2a4";
+}
+
+/* line 2934, ../styleguide/icons/_icons.scss */
+.wsk-icon--unfold-less:before {
+  content: "\f2a5";
+}
+
+/* line 2937, ../styleguide/icons/_icons.scss */
+.wsk-icon--unfold-more:before {
+  content: "\f2a6";
+}
+
+/* line 2942, ../styleguide/icons/_icons.scss */
+.wsk-icon--adb:before {
+  content: "\f2a7";
+}
+
+/* line 2945, ../styleguide/icons/_icons.scss */
+.wsk-icon--bluetooth-audio:before {
+  content: "\f2a8";
+}
+
+/* line 2948, ../styleguide/icons/_icons.scss */
+.wsk-icon--disc-full:before {
+  content: "\f2a9";
+}
+
+/* line 2951, ../styleguide/icons/_icons.scss */
+.wsk-icon--dnd-forwardslash:before {
+  content: "\f2aa";
+}
+
+/* line 2954, ../styleguide/icons/_icons.scss */
+.wsk-icon--do-not-disturb:before {
+  content: "\f2ab";
+}
+
+/* line 2957, ../styleguide/icons/_icons.scss */
+.wsk-icon--drive-eta:before {
+  content: "\f2ac";
+}
+
+/* line 2960, ../styleguide/icons/_icons.scss */
+.wsk-icon--event-available:before {
+  content: "\f2ad";
+}
+
+/* line 2963, ../styleguide/icons/_icons.scss */
+.wsk-icon--event-busy:before {
+  content: "\f2ae";
+}
+
+/* line 2966, ../styleguide/icons/_icons.scss */
+.wsk-icon--event-note:before {
+  content: "\f2af";
+}
+
+/* line 2969, ../styleguide/icons/_icons.scss */
+.wsk-icon--folder-special:before {
+  content: "\f2b0";
+}
+
+/* line 2972, ../styleguide/icons/_icons.scss */
+.wsk-icon--mms:before {
+  content: "\f2b1";
+}
+
+/* line 2975, ../styleguide/icons/_icons.scss */
+.wsk-icon--more:before {
+  content: "\f2b2";
+}
+
+/* line 2978, ../styleguide/icons/_icons.scss */
+.wsk-icon--network-locked:before {
+  content: "\f2b3";
+}
+
+/* line 2981, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-bluetooth-speaker:before {
+  content: "\f2b4";
+}
+
+/* line 2984, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-forwarded:before {
+  content: "\f2b5";
+}
+
+/* line 2987, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-in-talk:before {
+  content: "\f2b6";
+}
+
+/* line 2990, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-locked:before {
+  content: "\f2b7";
+}
+
+/* line 2993, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-missed:before {
+  content: "\f2b8";
+}
+
+/* line 2996, ../styleguide/icons/_icons.scss */
+.wsk-icon--phone-paused:before {
+  content: "\f2b9";
+}
+
+/* line 2999, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-download:before {
+  content: "\f2ba";
+}
+
+/* line 3002, ../styleguide/icons/_icons.scss */
+.wsk-icon--play-install:before {
+  content: "\f2bb";
+}
+
+/* line 3005, ../styleguide/icons/_icons.scss */
+.wsk-icon--sd-card:before {
+  content: "\f2bc";
+}
+
+/* line 3008, ../styleguide/icons/_icons.scss */
+.wsk-icon--sim-card-alert:before {
+  content: "\f2bd";
+}
+
+/* line 3011, ../styleguide/icons/_icons.scss */
+.wsk-icon--sms:before {
+  content: "\f2be";
+}
+
+/* line 3014, ../styleguide/icons/_icons.scss */
+.wsk-icon--sms-failed:before {
+  content: "\f2bf";
+}
+
+/* line 3017, ../styleguide/icons/_icons.scss */
+.wsk-icon--sync:before {
+  content: "\f2c0";
+}
+
+/* line 3020, ../styleguide/icons/_icons.scss */
+.wsk-icon--sync-disabled:before {
+  content: "\f2c1";
+}
+
+/* line 3023, ../styleguide/icons/_icons.scss */
+.wsk-icon--sync-problem:before {
+  content: "\f2c2";
+}
+
+/* line 3026, ../styleguide/icons/_icons.scss */
+.wsk-icon--system-update:before {
+  content: "\f2c3";
+}
+
+/* line 3029, ../styleguide/icons/_icons.scss */
+.wsk-icon--tap-and-play:before {
+  content: "\f2c4";
+}
+
+/* line 3032, ../styleguide/icons/_icons.scss */
+.wsk-icon--time-to-leave:before {
+  content: "\f2c5";
+}
+
+/* line 3035, ../styleguide/icons/_icons.scss */
+.wsk-icon--vibration:before {
+  content: "\f2c6";
+}
+
+/* line 3038, ../styleguide/icons/_icons.scss */
+.wsk-icon--voice-chat:before {
+  content: "\f2c7";
+}
+
+/* line 3041, ../styleguide/icons/_icons.scss */
+.wsk-icon--vpn-lock:before {
+  content: "\f2c8";
+}
+
+/* line 3046, ../styleguide/icons/_icons.scss */
+.wsk-icon--cake:before {
+  content: "\f2c9";
+}
+
+/* line 3049, ../styleguide/icons/_icons.scss */
+.wsk-icon--domain:before {
+  content: "\f2ca";
+}
+
+/* line 3052, ../styleguide/icons/_icons.scss */
+.wsk-icon--location-city:before {
+  content: "\f2cb";
+}
+
+/* line 3055, ../styleguide/icons/_icons.scss */
+.wsk-icon--mood:before {
+  content: "\f2cc";
+}
+
+/* line 3058, ../styleguide/icons/_icons.scss */
+.wsk-icon--notifications-none:before {
+  content: "\f2cd";
+}
+
+/* line 3061, ../styleguide/icons/_icons.scss */
+.wsk-icon--notifications:before {
+  content: "\f2ce";
+}
+
+/* line 3064, ../styleguide/icons/_icons.scss */
+.wsk-icon--notifications-off:before {
+  content: "\f2cf";
+}
+
+/* line 3067, ../styleguide/icons/_icons.scss */
+.wsk-icon--notifications-on:before {
+  content: "\f2d0";
+}
+
+/* line 3070, ../styleguide/icons/_icons.scss */
+.wsk-icon--notifications-paused:before {
+  content: "\f2d1";
+}
+
+/* line 3073, ../styleguide/icons/_icons.scss */
+.wsk-icon--pages:before {
+  content: "\f2d2";
+}
+
+/* line 3076, ../styleguide/icons/_icons.scss */
+.wsk-icon--party-mode:before {
+  content: "\f2d3";
+}
+
+/* line 3079, ../styleguide/icons/_icons.scss */
+.wsk-icon--group:before {
+  content: "\f2d4";
+}
+
+/* line 3082, ../styleguide/icons/_icons.scss */
+.wsk-icon--group-add:before {
+  content: "\f2d5";
+}
+
+/* line 3085, ../styleguide/icons/_icons.scss */
+.wsk-icon--people:before {
+  content: "\f2d6";
+}
+
+/* line 3088, ../styleguide/icons/_icons.scss */
+.wsk-icon--people-outline:before {
+  content: "\f2d7";
+}
+
+/* line 3091, ../styleguide/icons/_icons.scss */
+.wsk-icon--person:before {
+  content: "\f2d8";
+}
+
+/* line 3094, ../styleguide/icons/_icons.scss */
+.wsk-icon--person-add:before {
+  content: "\f2d9";
+}
+
+/* line 3097, ../styleguide/icons/_icons.scss */
+.wsk-icon--person-outline:before {
+  content: "\f2da";
+}
+
+/* line 3100, ../styleguide/icons/_icons.scss */
+.wsk-icon--plus-one:before {
+  content: "\f2db";
+}
+
+/* line 3103, ../styleguide/icons/_icons.scss */
+.wsk-icon--poll:before {
+  content: "\f2dc";
+}
+
+/* line 3106, ../styleguide/icons/_icons.scss */
+.wsk-icon--public:before {
+  content: "\f2dd";
+}
+
+/* line 3109, ../styleguide/icons/_icons.scss */
+.wsk-icon--school:before {
+  content: "\f2de";
+}
+
+/* line 3112, ../styleguide/icons/_icons.scss */
+.wsk-icon--share:before {
+  content: "\f2df";
+}
+
+/* line 3115, ../styleguide/icons/_icons.scss */
+.wsk-icon--whatshot:before {
+  content: "\f2e0";
+}
+
+/* line 3120, ../styleguide/icons/_icons.scss */
+.wsk-icon--check-box:before {
+  content: "\f2e1";
+}
+
+/* line 3123, ../styleguide/icons/_icons.scss */
+.wsk-icon--check-box-outline-blank:before {
+  content: "\f2e2";
+}
+
+/* line 3126, ../styleguide/icons/_icons.scss */
+.wsk-icon--radio-button-off:before {
+  content: "\f2e3";
+}
+
+/* line 3129, ../styleguide/icons/_icons.scss */
+.wsk-icon--radio-button-on:before {
+  content: "\f2e4";
+}
+
+/* line 3132, ../styleguide/icons/_icons.scss */
+.wsk-icon--star:before {
+  content: "\f2e5";
+}
+
+/* line 3135, ../styleguide/icons/_icons.scss */
+.wsk-icon--star-half:before {
+  content: "\f2e6";
+}
+
+/* line 3138, ../styleguide/icons/_icons.scss */
+.wsk-icon--star-outline:before {
+  content: "\f2e7";
+}
+
+/* line 32, ../styleguide/layout/_layout.scss */
+.wsk-navigation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* line 37, ../styleguide/layout/_layout.scss */
+.wsk-navigation__link {
+  color: #424242;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 45, ../styleguide/layout/_layout.scss */
+.wsk-navigation__link:hover {
+  background-color: #e0e0e0;
+}
+
+/* line 51, ../styleguide/layout/_layout.scss */
+.wsk-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* line 61, ../styleguide/layout/_layout.scss */
+.wsk-layout__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 69, ../styleguide/layout/_layout.scss */
+.wsk-layout-title {
+  display: block;
+  position: relative;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
+}
+
+/* line 77, ../styleguide/layout/_layout.scss */
+.wsk-layout-spacer {
+  flex-grow: 1;
+}
+
+/* line 83, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 240px;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+  background: #fafafa;
+  transform: translateX(-250px);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  color: #424242;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 5;
+}
+/* line 117, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer.is-visible {
+  transform: translateX(0);
+}
+/* line 121, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer > * {
+  flex-shrink: 0;
+}
+/* line 125, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer > .wsk-layout-title {
+  line-height: 64px;
+  padding-left: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media screen and (max-width: 850px) {
+  /* line 125, ../styleguide/layout/_layout.scss */
+  .wsk-layout__drawer > .wsk-layout-title {
+    line-height: 56px;
+    padding-left: 16px;
+  }
+}
+/* line 136, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer .wsk-navigation {
+  width: 100%;
+  flex-direction: column;
+}
+/* line 141, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer .wsk-navigation__link {
+  padding: 16px 24px;
+  margin: 0;
+}
+@media screen and (max-width: 850px) {
+  /* line 141, ../styleguide/layout/_layout.scss */
+  .wsk-layout__drawer .wsk-navigation__link {
+    padding: 16px 16px;
+  }
+}
+@media screen and (min-width: 851px) {
+  /* line 151, ../styleguide/layout/_layout.scss */
+  .wsk-layout--fixed-drawer > .wsk-layout__drawer {
+    transform: translateX(0);
+    z-index: 2;
+  }
+}
+
+/* line 161, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer-button {
+  display: block;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+/* line 181, ../styleguide/layout/_layout.scss */
+.wsk-layout__drawer-button::after {
+  font-family: 'Material-Design-Iconic-Font';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f2a1";
+}
+/* line 186, ../styleguide/layout/_layout.scss */
+.wsk-layout--overlay-drawer-button > .wsk-layout__drawer-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 192, ../styleguide/layout/_layout.scss */
+.wsk-layout__header .wsk-layout__drawer-button {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  height: 32px;
+  margin: 0;
+  width: 32px;
+  color: #eeeeee;
+  background-color: #2196f3;
+  z-index: 5;
+}
+@media screen and (max-width: 850px) {
+  /* line 192, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header .wsk-layout__drawer-button {
+    left: 16px;
+    top: 12px;
+  }
+}
+@media screen and (min-width: 851px) {
+  /* line 161, ../styleguide/layout/_layout.scss */
+  .wsk-layout__drawer-button {
+    display: none;
+  }
+}
+
+/* line 216, ../styleguide/layout/_layout.scss */
+.wsk-layout__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  border: none;
+  height: 64px;
+  min-height: 64px;
+  background-color: #2196f3;
+  color: #eeeeee;
+  z-index: 3;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  transition-property: min-height, box-shadow;
+  padding-left: 80px;
+  overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+  /* line 216, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header {
+    height: 56px;
+    min-height: 56px;
+    padding-left: 72px;
+  }
+}
+/* line 240, ../styleguide/layout/_layout.scss */
+.wsk-layout--fixed-drawer:not(.is-small-screen) > .wsk-layout__header {
+  padding-left: 24px;
+}
+/* line 244, ../styleguide/layout/_layout.scss */
+.wsk-layout__header > .wsk-layout-icon {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  z-index: 3;
+}
+@media screen and (max-width: 850px) {
+  /* line 244, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header > .wsk-layout-icon {
+    left: 16px;
+    top: 12px;
+  }
+}
+/* line 259, ../styleguide/layout/_layout.scss */
+.wsk-layout__header.is-compact {
+  min-height: 64px;
+}
+@media screen and (max-width: 850px) {
+  /* line 259, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header.is-compact {
+    min-height: 56px;
+  }
+}
+/* line 267, ../styleguide/layout/_layout.scss */
+.wsk-layout__header > * {
+  flex-shrink: 0;
+}
+/* line 272, ../styleguide/layout/_layout.scss */
+.wsk-layout__header > *:last-child {
+  margin-right: 24px;
+}
+@media screen and (max-width: 850px) {
+  /* line 272, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header > *:last-child {
+    margin-right: 16px;
+  }
+}
+/* line 281, ../styleguide/layout/_layout.scss */
+.wsk-layout__header > .wsk-navigation:last-child {
+  margin-right: 0;
+}
+/* line 285, ../styleguide/layout/_layout.scss */
+.wsk-layout__header .wsk-layout-title {
+  display: block;
+}
+/* line 289, ../styleguide/layout/_layout.scss */
+.wsk-layout__header .wsk-navigation {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 850px) {
+  /* line 289, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header .wsk-navigation {
+    height: 56px;
+  }
+}
+/* line 301, ../styleguide/layout/_layout.scss */
+.wsk-layout__header .wsk-navigation__link {
+  color: #eeeeee;
+  line-height: 64px;
+  padding: 0 24px;
+}
+@media screen and (max-width: 850px) {
+  /* line 301, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header .wsk-navigation__link {
+    line-height: 56px;
+    padding: 0 16px;
+  }
+}
+/* line 312, ../styleguide/layout/_layout.scss */
+.wsk-layout__header .wsk-navigation__link:hover {
+  background-color: rgba(97, 97, 97, 0.6);
+}
+@media screen and (min-width: 851px) {
+  /* line 317, ../styleguide/layout/_layout.scss */
+  .wsk-layout--fixed-drawer > .wsk-layout__header {
+    margin-left: 240px;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 323, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header {
+    display: none;
+  }
+  /* line 327, ../styleguide/layout/_layout.scss */
+  .wsk-layout--fixed-header > .wsk-layout__header {
+    display: flex;
+  }
+}
+
+/* line 333, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--multi-row {
+  flex-direction: column;
+}
+
+/* line 337, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--medium-tall {
+  min-height: 128px;
+}
+@media screen and (max-width: 850px) {
+  /* line 337, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header--medium-tall {
+    min-height: 112px;
+  }
+}
+
+/* line 345, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--tall {
+  min-height: 192px;
+}
+@media screen and (max-width: 850px) {
+  /* line 345, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header--tall {
+    min-height: 168px;
+  }
+}
+
+/* line 353, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--transparent.wsk-layout__header--transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* line 358, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--seamed {
+  box-shadow: none;
+}
+
+/* line 362, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--scroll {
+  box-shadow: none;
+}
+
+/* line 366, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--waterfall {
+  box-shadow: none;
+}
+/* line 369, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--waterfall.is-casting-shadow {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 375, ../styleguide/layout/_layout.scss */
+.wsk-layout__header-row.wsk-layout__header-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  min-height: 64px;
+  width: 100%;
+  margin-right: 0;
+}
+@media screen and (max-width: 850px) {
+  /* line 375, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header-row.wsk-layout__header-row {
+    min-height: 56px;
+  }
+}
+/* line 389, ../styleguide/layout/_layout.scss */
+.wsk-layout__header-row.wsk-layout__header-row > .wsk-layout-icon {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  z-index: 3;
+}
+@media screen and (max-width: 850px) {
+  /* line 389, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header-row.wsk-layout__header-row > .wsk-layout-icon {
+    left: 16px;
+    top: 12px;
+  }
+}
+/* line 404, ../styleguide/layout/_layout.scss */
+.wsk-layout__header-row.wsk-layout__header-row > * {
+  flex-shrink: 0;
+}
+/* line 409, ../styleguide/layout/_layout.scss */
+.wsk-layout__header-row.wsk-layout__header-row > *:last-child {
+  margin-right: 24px;
+}
+@media screen and (max-width: 850px) {
+  /* line 409, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header-row.wsk-layout__header-row > *:last-child {
+    margin-right: 16px;
+  }
+}
+/* line 418, ../styleguide/layout/_layout.scss */
+.wsk-layout__header-row.wsk-layout__header-row > .wsk-navigation:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  /* line 425, ../styleguide/layout/_layout.scss */
+  .wsk-layout__obfuscator {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    visibility: hidden;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* line 437, ../styleguide/layout/_layout.scss */
+  .wsk-layout__drawer.is-visible ~ .wsk-layout__obfuscator {
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+  }
+}
+/* line 446, ../styleguide/layout/_layout.scss */
+.wsk-layout__content {
+  -ms-flex: 0 1 auto;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  z-index: 1;
+}
+/* line 456, ../styleguide/layout/_layout.scss */
+.wsk-layout--fixed-drawer > .wsk-layout__content {
+  margin-left: 240px;
+}
+/* line 460, ../styleguide/layout/_layout.scss */
+.wsk-layout__header--scroll ~ .wsk-layout__content {
+  overflow: visible;
+}
+@media screen and (max-width: 850px) {
+  /* line 465, ../styleguide/layout/_layout.scss */
+  .wsk-layout--fixed-drawer > .wsk-layout__content {
+    margin-left: 0;
+  }
+  /* line 469, ../styleguide/layout/_layout.scss */
+  .wsk-layout__header--scroll ~ .wsk-layout__content {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* line 477, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar {
+  position: absolute;
+  top: 0;
+  height: 96px;
+  width: calc(100% -         112px);
+  padding: 0 0 0 56px;
+  display: flex;
+  background-color: #2196f3;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+/* line 489, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  /* line 477, ../styleguide/layout/_layout.scss */
+  .wsk-layout__tab-bar {
+    width: calc(100% -           60px);
+    padding: 0 0 0 60px;
+  }
+}
+/* line 499, ../styleguide/layout/_layout.scss */
+.wsk-layout--fixed-tabs .wsk-layout__tab-bar {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 505, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar.is-casting-shadow {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 510, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-container {
+  position: relative;
+  overflow: hidden;
+  height: 48px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  z-index: 3;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+/* line 522, ../styleguide/layout/_layout.scss */
+.wsk-layout__container > .wsk-layout__tab-bar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 529, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-button {
+  display: inline-block;
+  position: absolute;
+  height: 48px;
+  line-height: 48px;
+  width: 56px;
+  z-index: 4;
+  text-align: center;
+  background-color: #2196f3;
+  color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  /* line 529, ../styleguide/layout/_layout.scss */
+  .wsk-layout__tab-bar-button {
+    display: none;
+    width: 60px;
+  }
+}
+/* line 546, ../styleguide/layout/_layout.scss */
+.wsk-layout--fixed-tabs .wsk-layout__tab-bar-button {
+  display: none;
+}
+/* line 550, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-button.is-active {
+  color: #eeeeee;
+}
+
+/* line 555, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-left-button {
+  left: 0;
+}
+/* line 558, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-left-button::after {
+  font-size: 26px;
+  font-family: 'Material-Design-Iconic-Font';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f29b";
+}
+
+/* line 565, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-right-button {
+  right: 0;
+}
+/* line 568, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-bar-right-button::after {
+  font-size: 26px;
+  font-family: 'Material-Design-Iconic-Font';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f29c";
+}
+
+/* line 575, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab {
+  margin: 0;
+  border: none;
+  padding: 0 24px 0 24px;
+  float: left;
+  position: relative;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-decoration: none;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(238, 238, 238, 0.6);
+  overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+  /* line 575, ../styleguide/layout/_layout.scss */
+  .wsk-layout__tab {
+    padding: 0 12px 0 12px;
+  }
+}
+/* line 602, ../styleguide/layout/_layout.scss */
+.wsk-layout--fixed-tabs .wsk-layout__tab {
+  float: none;
+  flex-grow: 1;
+  padding: 0;
+}
+/* line 608, ../styleguide/layout/_layout.scss */
+.wsk-layout.is-upgraded .wsk-layout__tab.is-active {
+  color: #eeeeee;
+}
+/* line 612, ../styleguide/layout/_layout.scss */
+.wsk-layout.is-upgraded .wsk-layout__tab.is-active::after {
+  height: 2px;
+  width: 100%;
+  display: block;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #e0e0e0;
+  -webkit-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
+  -moz-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
+  transition: all 1s cubic-bezier(0.4, 0, 1, 1);
+}
+/* line 626, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab .wsk-layout__tab-ripple-container {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* line 638, ../styleguide/layout/_layout.scss */
+.wsk-layout__tab-panel {
+  display: block;
+}
+/* line 641, ../styleguide/layout/_layout.scss */
+.wsk-layout.is-upgraded .wsk-layout__tab-panel {
+  display: none;
+}
+/* line 645, ../styleguide/layout/_layout.scss */
+.wsk-layout.is-upgraded .wsk-layout__tab-panel.is-active {
+  display: block;
+}
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Color Palettes  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* Heading back */
+/* ==========  Sliders ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* line 17, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z1 {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 21, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 25, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z3 {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 29, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z4 {
+  box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.25), 0 10px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 33, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z5 {
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+}
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Color Palettes  ========== */
+/* line 5, ../styleguide/ripple/_ripple.scss */
+.wsk-ripple {
+  background: #212121;
+  border-radius: 50%;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  overflow: hidden;
+}
+/* line 18, ../styleguide/ripple/_ripple.scss */
+.wsk-ripple.is-animating {
+  transition: transform 0.6s cubic-bezier(0, 0, 0.2, 1), width 0.6s cubic-bezier(0, 0, 0.2, 1), height 0.6s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* line 15, ../styleguide/switch/_switch.scss */
+.wsk-switch {
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 24px;
+  margin: 12px 0;
+  padding: 0;
+  overflow: visible;
+}
+/* line 32, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-upgraded {
+  padding-left: 28px;
+}
+
+/* line 37, ../styleguide/switch/_switch.scss */
+.wsk-switch__input {
+  line-height: 24px;
+}
+/* line 40, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-upgraded .wsk-switch__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+/* line 56, ../styleguide/switch/_switch.scss */
+.wsk-switch__track {
+  background: rgba(0, 0, 0, 0.26);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 14px;
+  width: 36px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+/* line 67, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-checked .wsk-switch__track {
+  background: rgba(33, 150, 243, 0.5);
+}
+/* line 71, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-disabled .wsk-switch__track {
+  background: rgba(0, 0, 0, 0.12);
+  cursor: auto;
+}
+
+/* line 77, ../styleguide/switch/_switch.scss */
+.wsk-switch__thumb {
+  background: #fafafa;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  transition-duration: 0.28s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: left;
+}
+/* line 93, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-checked .wsk-switch__thumb {
+  background: #2196f3;
+  left: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+/* line 100, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-disabled .wsk-switch__thumb {
+  background: #bdbdbd;
+  cursor: auto;
+}
+
+/* line 106, ../styleguide/switch/_switch.scss */
+.wsk-switch__focus-helper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-4px, -4px);
+  display: inline-block;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+/* line 122, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-focused .wsk-switch__focus-helper {
+  box-shadow: 0 0 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 128, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-focused.is-checked .wsk-switch__focus-helper {
+  box-shadow: 0 0 0px 20px rgba(33, 150, 243, 0.26);
+  background-color: rgba(33, 150, 243, 0.26);
+}
+
+/* line 135, ../styleguide/switch/_switch.scss */
+.wsk-switch__label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  left: 24px;
+}
+/* line 143, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-disabled .wsk-switch__label {
+  color: #bdbdbd;
+  cursor: auto;
+}
+
+/* line 149, ../styleguide/switch/_switch.scss */
+.wsk-switch__ripple-container {
+  position: absolute;
+  z-index: 2;
+  top: -12px;
+  left: -14px;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  transition-duration: 0.40s;
+  transition-timing-function: step-end;
+  transition-property: left;
+}
+/* line 169, ../styleguide/switch/_switch.scss */
+.wsk-switch__ripple-container .wsk-ripple {
+  background: #2196f3;
+}
+/* line 173, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-disabled .wsk-switch__ripple-container {
+  cursor: auto;
+}
+/* line 177, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-disabled .wsk-switch__ripple-container .wsk-ripple {
+  background: transparent;
+}
+/* line 181, ../styleguide/switch/_switch.scss */
+.wsk-switch.is-checked .wsk-switch__ripple-container {
+  cursor: auto;
+  left: 2px;
+}
+
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+/* line 201, ../styleguide/typography/_typography.scss */
+html, body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* line 208, ../styleguide/typography/_typography.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Styles for HTML elements
+ */
+/* line 217, ../styleguide/typography/_typography.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  opacity: 0.54;
+  font-size: 0.6em;
+}
+
+/* line 222, ../styleguide/typography/_typography.scss */
+h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* line 226, ../styleguide/typography/_typography.scss */
+h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+/* line 230, ../styleguide/typography/_typography.scss */
+h3 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 234, ../styleguide/typography/_typography.scss */
+h4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 238, ../styleguide/typography/_typography.scss */
+h5 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+/* line 242, ../styleguide/typography/_typography.scss */
+h6 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 246, ../styleguide/typography/_typography.scss */
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin: 0 0 16px 0;
+}
+
+/* line 252, ../styleguide/typography/_typography.scss */
+a {
+  font-weight: bold;
+}
+
+/* line 256, ../styleguide/typography/_typography.scss */
+blockquote {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+/* line 161, ../styleguide/typography/_typography.scss */
+blockquote:before {
+  content: '“';
+  opacity: 0.54;
+}
+/* line 166, ../styleguide/typography/_typography.scss */
+blockquote:after {
+  content: '”';
+  opacity: 0.54;
+}
+
+/* line 260, ../styleguide/typography/_typography.scss */
+mark {
+  background-color: #f4ff81;
+}
+
+/* line 264, ../styleguide/typography/_typography.scss */
+dt {
+  font-weight: 700;
+}
+
+/**
+ * Class Name Styles
+ */
+/* line 272, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+/* line 276, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-4--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  opacity: 0.54;
+}
+
+/* line 280, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-3 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* line 284, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-3--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  opacity: 0.54;
+}
+
+/* line 288, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+/* line 292, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-2--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  opacity: 0.54;
+}
+
+/* line 296, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 300, ../styleguide/typography/_typography.scss */
+.wsk-typography--display-1--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  opacity: 0.54;
+}
+
+/* line 304, ../styleguide/typography/_typography.scss */
+.wsk-typography--headline {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 308, ../styleguide/typography/_typography.scss */
+.wsk-typography--headline--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0.87;
+}
+
+/* line 312, ../styleguide/typography/_typography.scss */
+.wsk-typography--title {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+/* line 316, ../styleguide/typography/_typography.scss */
+.wsk-typography--title--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  opacity: 0.87;
+}
+
+/* line 320, ../styleguide/typography/_typography.scss */
+.wsk-typography--subhead {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 324, ../styleguide/typography/_typography.scss */
+.wsk-typography--subhead--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 328, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-2 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 332, ../styleguide/typography/_typography.scss */
+.wsk-typography--Body-2--colorContrast {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 336, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 340, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--colorContrast {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 344, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-2--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 348, ../styleguide/typography/_typography.scss */
+.wsk-typography--Body-2--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 352, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* line 356, ../styleguide/typography/_typography.scss */
+.wsk-typography--body-1--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 360, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* line 364, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--forcePreferredFont {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* line 368, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--colorContrast {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  opacity: 0.54;
+}
+
+/* line 372, ../styleguide/typography/_typography.scss */
+.wsk-typography--caption--forcePreferredFont--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  opacity: 0.54;
+}
+
+/* line 376, ../styleguide/typography/_typography.scss */
+.wsk-typography--menu {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+/* line 380, ../styleguide/typography/_typography.scss */
+.wsk-typography--menu--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 384, ../styleguide/typography/_typography.scss */
+.wsk-typography--button {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+/* line 388, ../styleguide/typography/_typography.scss */
+.wsk-typography--button--colorContrast {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  opacity: 0.87;
+}
+
+/* line 392, ../styleguide/typography/_typography.scss */
+.wsk-typography--textLeft {
+  text-align: left;
+}
+
+/* line 396, ../styleguide/typography/_typography.scss */
+.wsk-typography--textRight {
+  text-align: right;
+}
+
+/* line 400, ../styleguide/typography/_typography.scss */
+.wsk-typography--textCenter {
+  text-align: center;
+}
+
+/* line 404, ../styleguide/typography/_typography.scss */
+.wsk-typography--textJustify {
+  text-align: justify;
+}
+
+/* line 408, ../styleguide/typography/_typography.scss */
+.wsk-typography--textNowrap {
+  white-space: nowrap;
+}
+
+/* line 413, ../styleguide/typography/_typography.scss */
+.wsk-typography--textLowercase {
+  text-transform: lowercase;
+}
+
+/* line 417, ../styleguide/typography/_typography.scss */
+.wsk-typography--textUppercase {
+  text-transform: uppercase;
+}
+
+/* line 421, ../styleguide/typography/_typography.scss */
+.wsk-typography--textCapitalize {
+  text-transform: capitalize;
+}
+
+/* line 426, ../styleguide/typography/_typography.scss */
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > td,
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+/* line 431, ../styleguide/typography/_typography.scss */
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > td,
+.wsk-typography--tableStriped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Color Palettes  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* Heading back */
+/* ==========  Sliders ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* line 17, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z1 {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 21, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 25, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z3 {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+}
+
+/* line 29, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z4 {
+  box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.25), 0 10px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 33, ../styleguide/shadow/_shadow.scss */
+.wsk-shadow--z5 {
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+}
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Color Palettes  ========== */
+/* line 5, ../styleguide/ripple/_ripple.scss */
+.wsk-ripple {
+  background: #212121;
+  border-radius: 50%;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  overflow: hidden;
+}
+/* line 18, ../styleguide/ripple/_ripple.scss */
+.wsk-ripple.is-animating {
+  transition: transform 0.6s cubic-bezier(0, 0, 0.2, 1), width 0.6s cubic-bezier(0, 0, 0.2, 1), height 0.6s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/**
+ *
+ * Dimensions
+ *
+ */
+/* line 33, ../styleguide/button/_button.scss */
+.wsk-button {
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: black;
+  display: block;
+  position: relative;
+  height: 36px;
+  min-width: 64px;
+  padding: 0 8px;
+  margin: 0 4px;
+  display: inline-block;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+}
+/* line 54, ../styleguide/button/_button.scss */
+.wsk-button::-moz-focus-inner {
+  border: 0;
+}
+/* line 58, ../styleguide/button/_button.scss */
+.wsk-button:hover {
+  background-color: rgba(153, 153, 153, 0.2);
+}
+/* line 62, ../styleguide/button/_button.scss */
+.wsk-button:focus:not(:active) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+/* line 66, ../styleguide/button/_button.scss */
+.wsk-button:active {
+  background-color: rgba(153, 153, 153, 0.4);
+}
+/* line 71, ../styleguide/button/_button.scss */
+.wsk-button[disabled][disabled] {
+  color: rgba(0, 0, 0, 0.26);
+  cursor: auto;
+  background-color: transparent;
+}
+/* line 77, ../styleguide/button/_button.scss */
+.wsk-button.wsk-button--colored {
+  color: #2196f3;
+}
+/* line 80, ../styleguide/button/_button.scss */
+.wsk-button.wsk-button--colored:focus:not(:active) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* line 88, ../styleguide/button/_button.scss */
+.wsk-button--raised {
+  background: rgba(153, 153, 153, 0.2);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+/* line 92, ../styleguide/button/_button.scss */
+.wsk-button--raised:active {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+  background-color: rgba(153, 153, 153, 0.4);
+}
+/* line 97, ../styleguide/button/_button.scss */
+.wsk-button--raised:focus:not(:active) {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+  background-color: rgba(153, 153, 153, 0.4);
+}
+/* line 102, ../styleguide/button/_button.scss */
+.wsk-button--raised.wsk-button--colored {
+  background: #2196f3;
+  color: white;
+}
+/* line 106, ../styleguide/button/_button.scss */
+.wsk-button--raised.wsk-button--colored:hover {
+  background-color: #1e88e5;
+}
+/* line 110, ../styleguide/button/_button.scss */
+.wsk-button--raised.wsk-button--colored:active {
+  background-color: #1976d2;
+}
+/* line 114, ../styleguide/button/_button.scss */
+.wsk-button--raised.wsk-button--colored:focus:not(:active) {
+  background-color: #1976d2;
+}
+/* line 118, ../styleguide/button/_button.scss */
+.wsk-button--raised.wsk-button--colored .wsk-ripple {
+  background: white;
+}
+/* line 124, ../styleguide/button/_button.scss */
+.wsk-button--raised[disabled][disabled] {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 133, ../styleguide/button/_button.scss */
+.wsk-button--fab {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 56px;
+  margin: auto;
+  min-width: 56px;
+  width: 56px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(153, 153, 153, 0.2);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+/* line 146, ../styleguide/button/_button.scss */
+.wsk-button--fab .wsk-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+/* line 152, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--mini-fab {
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+}
+/* line 157, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--mini-fab .wsk-icon {
+  top: 8px;
+  left: 8px;
+}
+/* line 163, ../styleguide/button/_button.scss */
+.wsk-button--fab .wsk-button__ripple-container {
+  border-radius: 50%;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 169, ../styleguide/button/_button.scss */
+.wsk-button--fab:active {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+  background-color: rgba(153, 153, 153, 0.4);
+}
+/* line 174, ../styleguide/button/_button.scss */
+.wsk-button--fab:focus:not(:active) {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+  background-color: rgba(153, 153, 153, 0.4);
+}
+/* line 179, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--colored {
+  background: #ec407a;
+  color: white;
+}
+/* line 183, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--colored:hover {
+  background-color: #e91e63;
+}
+/* line 187, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--colored:focus:not(:active) {
+  background-color: #d81b60;
+}
+/* line 191, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--colored:active {
+  background-color: #d81b60;
+}
+/* line 195, ../styleguide/button/_button.scss */
+.wsk-button--fab.wsk-button--colored .wsk-ripple {
+  background: white;
+}
+/* line 201, ../styleguide/button/_button.scss */
+.wsk-button--fab[disabled][disabled] {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 210, ../styleguide/button/_button.scss */
+.wsk-button--icon {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 32px;
+  width: 32px;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 221, ../styleguide/button/_button.scss */
+.wsk-button--icon .wsk-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+/* line 227, ../styleguide/button/_button.scss */
+.wsk-button--icon.wsk-button--mini-icon {
+  height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+/* line 232, ../styleguide/button/_button.scss */
+.wsk-button--icon.wsk-button--mini-icon .wsk-icon {
+  top: 0px;
+  left: 0px;
+}
+/* line 238, ../styleguide/button/_button.scss */
+.wsk-button--icon .wsk-button__ripple-container {
+  border-radius: 50%;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+
+/* line 247, ../styleguide/button/_button.scss */
+.wsk-button__ripple-container {
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+/* line 257, ../styleguide/button/_button.scss */
+.wsk-button[disabled] .wsk-button__ripple-container .wsk-ripple {
+  background-color: transparent;
+}
+
+/* line 19, main.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 26, main.scss */
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100%;
+  color: #9e9e9e;
+}
+
+/* line 35, main.scss */
+header {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* line 40, main.scss */
+header h1 {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* line 50, main.scss */
+main {
+  max-width: 480px;
+  min-width: 64px;
+  width: 100%;
+  padding: 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 61, main.scss */
+.error-title {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+/* line 66, main.scss */
+a {
+  color: inherit;
+}
+
+/* line 70, main.scss */
+.curl-code-example {
+  display: block;
+  width: 100%;
+  word-break: break-all;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  color: #222222;
+}
+
+/* line 84, main.scss */
+.center {
+  text-align: center;
+}
+
+/* line 88, main.scss */
+.content-overlap-wrapper {
+  flex: 1;
+}
+
+/* line 92, main.scss */
+.send-push-options {
+  margin-top: 32px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* line 100, main.scss */
+.error-message-container {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
